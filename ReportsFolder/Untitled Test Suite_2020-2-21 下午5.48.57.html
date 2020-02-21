@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/yoyo82725/TestReports/master/plugins/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/yoyo82725/TestReports/master/plugins/vis.min.css" />
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/yoyo82725/TestReports/master/plugins/bdd.css" />
+    <script src="https://raw.githubusercontent.com/yoyo82725/TestReports/master/plugins/jquery.min.js"></script>
+    <script src="https://raw.githubusercontent.com/yoyo82725/TestReports/master/plugins/bootstrap.min.js"></script>
+    <script src="https://raw.githubusercontent.com/yoyo82725/TestReports/master/plugins/vis.min.js"></script>
+</head>
+<body>
+                            <!-- report here -->
+                            <!-- part 1 table -->
+                            <div class="table-responsive">
+                                <table class=" table-hover table">
+                                    <thead>
+                                        <tr>
+                                            <th class="fit-content-column">Status</th>
+                                            <th class="">Name</th>
+                                            <th class="">Started</th>
+                                            <th class="">Duration</th>
+                                            <th class="">Result</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="p1Tbody">
+            <tr>
+                <td class="fit-content-column">
+                    <span title="Failed">
+            <svg width="12px" height="12px" viewBox="0 0 12 12">
+                <desc>Created with sketchtool.</desc>
+                <g id="Execution" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="KA-New-UI" transform="translate(-332.000000, -726.000000)">
+                        <g id="Icon/12px/Status/Failed" transform="translate(332.000000, 726.000000)">
+                            <g id="Group">
+                                <circle id="Oval" fill="#E05169" cx="6" cy="6" r="6"></circle>
+                                <g id="Group-2" transform="translate(6.000000, 6.000000) rotate(-45.000000) translate(-6.000000, -6.000000) translate(2.000000, 2.000000)" fill="#FFFFFF">
+                                    <rect id="Rectangle" x="0" y="3" width="8" height="2" rx="1"></rect>
+                                    <rect id="Rectangle" transform="translate(4.000000, 4.000000) rotate(-90.000000) translate(-4.000000, -4.000000) " x="0" y="3" width="8" height="2" rx="1">
+                                    </rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </span>
+                </td>
+                <td class="">
+                    <div>
+                        <div class="text-wrap">Untitled Test Case</div>
+                    </div>
+                </td>
+                <td class="">2020/2/21 下午5:48:52</td>
+                <td class="">0.64s</td>
+                <td class="">
+                    <span title="Test Runs">
+                        <span title="Failed" class="bg-danger badge-circle-sm badge badge-secondary">Failed</span>
+                    </span>
+                </td>
+            </tr>
+        </tbody>
+                                </table>
+                            </div>
+                            <!-- part 1 table END -->
+                            <!-- part 2 BDD -->
+                            <div id="gherkin_report"><div class="gherkin_line p1 ">
+                                    <div class="color"></div><span class="colorBlue">FEATURE:</span> Change Default Language
+                                </div><div class="gherkin_line p2 ">
+                                    <div class="color"></div>As "Eddie"
+                                </div><div class="gherkin_line p2 ">
+                                    <div class="color"></div>I want to be able to change my default language
+                                </div><div class="gherkin_line p2 ">
+                                    <div class="color"></div>So that I can read the UI and messages in my preferred language.
+                                </div><div class="gherkin_line p2 ">
+                                    <div class="color"></div>
+                                </div><div class="gherkin_line p1 ">
+                                    <div class="color"></div><span class="colorBlue">Background:</span>
+                                </div><div class="gherkin_line p2 ">
+                                    <div class="color"></div><span class="colorBlue">Given</span> the following languages exist:
+                                </div><div class="gherkin_line p3 ">
+                                    <div class="color"></div>| Name    | Culture |
+                                </div><div class="gherkin_line p3 ">
+                                    <div class="color"></div>| English | en-US   |
+                                </div><div class="gherkin_line p3 ">
+                                    <div class="color"></div>| Polish  | pl      |
+                                </div><div class="gherkin_line p3 ">
+                                    <div class="color"></div>| Italian | it-IT   |
+                                </div><div class="gherkin_line p3 ">
+                                    <div class="color"></div>
+                                </div><div class="gherkin_line p2 ">
+                                    <div class="color"></div><span class="colorBlue">And</span> the following translations exist:
+                                </div><div class="gherkin_line p3 ">
+                                    <div class="color"></div>| Language | Key                 | Translation             |
+                                </div><div class="gherkin_line p3 ">
+                                    <div class="color"></div>| English  | Profile updated     | Profile updated         |
+                                </div><div class="gherkin_line p3 ">
+                                    <div class="color"></div>| Polish   | Profile updated     | Profil zaktualizowany   |
+                                </div><div class="gherkin_line p3 ">
+                                    <div class="color"></div>| Italian  | Profile updated     | Profilo aggiornato      |
+                                </div><div class="gherkin_line p3 ">
+                                    <div class="color"></div>| English  | Site is Unavailable | Site is Unavailable     |
+                                </div><div class="gherkin_line p3 ">
+                                    <div class="color"></div>| Polish   | Site is Unavailable | Strona jest niedostępna |
+                                </div><div class="gherkin_line p3 ">
+                                    <div class="color"></div>| Italian  | Site is Unavailable | Sito non è disponibile  |
+                                </div><div class="gherkin_line p3 ">
+                                    <div class="color"></div>
+                                </div><div class="gherkin_line p2 ">
+                                    <div class="color"></div><span class="colorBlue">And</span> the following users exist:
+                                </div><div class="gherkin_line p3 ">
+                                    <div class="color"></div>| FirstName | LastName | UserName | Language |
+                                </div><div class="gherkin_line p3 ">
+                                    <div class="color"></div>| Jimmy     | Parker   | jparker  |          |
+                                </div><div class="gherkin_line p3 ">
+                                    <div class="color"></div>| Paige     | Davis    | pdavis   | Polish   |
+                                </div><div class="gherkin_line p3 ">
+                                    <div class="color"></div>
+                                </div><div class="gherkin_line p1 ">
+                                    <div class="color"></div><span class="colorBlue">SCENARIO:</span> Change Default Language
+                                </div><div class="gherkin_line p2 ">
+                                    <div class="color"></div><span class="colorBlue">Given</span> I am logged into the system as "jparker"
+                                </div><div class="gherkin_line p2 ">
+                                    <div class="color"></div><span class="colorBlue">When</span> I update my language to "Polish"
+                                </div><div class="gherkin_line p2 ">
+                                    <div class="color"></div><span class="colorBlue">Then</span> my default language should be updated to "Polish"
+                                </div><div class="gherkin_line p2 ">
+                                    <div class="color"></div><span class="colorBlue">And</span> I should see the message "Profil zaktualizowany"
+                                </div><div class="gherkin_line p3 ">
+                                    <div class="color"></div>
+                                </div><div class="gherkin_line p1 ">
+                                    <div class="color"></div><span class="colorBlue">SCENARIO:</span> Update Default Language
+                                </div><div class="gherkin_line p2 ">
+                                    <div class="color"></div><span class="colorBlue">Given</span> I am logged into the system as "pdavis"
+                                </div><div class="gherkin_line p2 ">
+                                    <div class="color"></div><span class="colorBlue">When</span> I update my language to "Italian"
+                                </div><div class="gherkin_line p2 ">
+                                    <div class="color"></div><span class="colorBlue">Then</span> my default language should be updated to "Italian"
+                                </div><div class="gherkin_line p2 ">
+                                    <div class="color"></div><span class="colorBlue">And</span> I should see the message "Profilo aggiornato"
+                                </div></div>
+                            <!-- part 2 BDD END -->
+                            <!-- part 3 API Calls -->
+                            <div id="api_report">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card bg-light">
+                                            <div class="card-header text-center">API State Transition</div>
+                                            <div class="card-body">
+                                                <div id="status"><table class="table table-striped">
+	<thead><tr><th>#</th><th>Number of calls</th><th>Average response time</th></tr></thead>
+	<tbody><tr><td class="statusName" title="http://127.0.0.1:3000/">API1</td><td>5</td><td>0.0108秒</td></tr><tr><td class="statusName" title="https://api.github.com/search/repositories?q=&amp;sort=&amp;order=">API2</td><td>2</td><td>無回應</td></tr></tbody>
+	</table></div>
+                                                <div id="vis"><div class="vis-network" tabindex="900" style="position: relative; overflow: hidden; touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 100%; height: 100%;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsIAAAH0CAYAAAA32Uv0AAAgAElEQVR4XuzdCXhU1dkH8PfcmewLJJCZBMK+Z8K+KBZXVKxY1FIUt6ofWqrgXhHIhBAyAUEtotWqRW21iohUQaWCoCgqiCwBMmGNbAEyk0B2kklm7vmeM0loVsgyy525//s934NN5p77nt+5wJ+Tc89lhAMCEIAABCAAAQhAAAIqFGAq7DO6DAEIQAACEIAABCAAAUIQxk0AAQhAAAIQgAAEIKBKAQRhVQ47Og0BCEAAAhCAAAQggCCMewACEIAABCAAAQhAQJUCCMKqHHZ0GgIQgAAEIAABCEAAQRj3AAQgAAEIQAACEICAKgUQhFU57Og0BCAAAQhAAAIQgACCMO4BCEAAAhCAAAQgAAFVCiAIq3LY0WkIQAACEIAABCAAAQRh3AMQgAAEIAABCEAAAqoUQBBW5bCj0xCAAAQgAAEIQAACCMK4ByAAAQhAAAIQgAAEVCmAIKzKYUenIQABCEAAAhCAAAQQhHEPQAACEIAABCAAAQioUgBBWJXDjk5DAAIQgAAEIAABCCAI4x6AAAQgAAEIQAACEFClAIKwKocdnYYABCAAAQhAAAIQQBDGPQABCEAAAhCAAAQgoEoBBGFVDjs6DQEIQAACEIAABCCAIIx7AAIQgAAEIAABCEBAlQIIwqocdnQaAhCAAAQgAAEIQABBGPcABCAAAQhAAAIQgIAqBRCEVTns6DQEIAABCEAAAhCAAIIw7gEIQAACEIAABCAAAVUKIAirctjRaQhAAAIQgAAEIAABBGHcAxCAAAQgAAEIQAACqhRAEFblsKPTEIAABCAAAQhAAAIIwrgHIAABCEAAAhCAAARUKYAgrMphR6chAAEIQAACEIAABBCEcQ9AAAIQgAAEIAABCKhSAEFYlcOOTkMAAhCAAAQgAAEIIAjjHoAABCAAAQhAAAIQUKUAgrAqhx2dhgAEIAABCEAAAhBAEMY9AAEIQAACEIAABCCgSgEEYVUOOzoNAQhAAAIQgAAEIIAgjHsAAhCAAAQgAAEIQECVAgjCqhx2dBoCEIAABCAAAQhAAEEY9wAEIAABCEAAAhCAgCoFEIRVOezoNAQgAAEIQAACEIAAgjDuAQhAAAIQgAAEIAABVQogCKty2NFpCEAAAhCAAAQgAAEEYdwDEIAABCAAAQhAAAKqFEAQVuWwo9MQgAAEIAABCEAAAgjCuAcgAAEIQAACEIAABFQpgCCsymFHpyEAAQhAAAIQgAAEEIRxD0AAAhCAAAQgAAEIqFIAQViVw45OQwACEIAABCAAAQggCOMegAAEIAABCEAAAhBQpQCCsCqHHZ2GAAQgAAEIQAACEEAQxj0AAQhAAAIQgAAEIKBKAQRhVQ47Og0BCEAAAhCAAAQggCCMewACEIAABCAAAQhAQJUCCMKqHHZ0GgIQgAAEIAABCEAAQRj3AAQgAAEIQAACEICAKgUQhFU57Og0BCAAAQhAAAIQgACCMO4BCEAAAhCAAAQgAAFVCiAIq3LY0WkIQAACEIAABCAAAQRh3AMQgAAEIAABCEAAAqoUQBBW5bCj0xCAAAQgAAEIQAACCMK4ByAAAQhAAAIQgAAEVCmAIKzKYUenIQABCEAAAhCAAAQQhHEPQAACEIAABCAAAQioUgBBWJXDjk5DAAIQgAAEIAABCCAI4x6AAAQgAAEIQAACEFClAIKwKocdnYYABCAAAQhAAAIQQBDGPQABCEAAAhCAAAQgoEoBBGFVDjs6DQEIQAACEIAABCCAIIx7AAIQgAAEIAABCEBAlQIIwqocdnQaAhCAAAQgAAEIQABBGPcABCAAAQhAAAIQgIAqBRCEVTns6DQEIAABCEAAAhCAAIIw7gEIQAACEIAABCAAAVUKIAirctjRaQhAAAIQgAAEIAABBGHcAxCAAAQgAAEIQAACqhRAEFblsKPTEIAABCAAAQhAAAIIwrgHIAABCEAAAhCAAARUKYAgrMphR6chAAEIQAACEIAABBCEcQ9AAAIQgAAEIAABCKhSAEFYlcOOTkMAAhCAAAQgAAEIIAjjHoAABCAAAQhAAAIQUKUAgrAqhx2dhgAEIAABCEAAAhBAEMY9AAEIQAACEIAABCCgSgEEYVUOOzoNAQhAAAIQgAAEIIAgjHsAAhCAAAQgAAEIQECVAgjCqhx2dBoCEIAABCAAAQhAAEEY9wAEIAABCEAAAhCAgCoFEIRVOezoNAQgAAEIQAACEIAAgjDuAQhAAAIQgAAEIAABVQogCKty2NFpCEAAAhCAAAQgAAEEYdwDEIAABCAAAQhAAAKqFEAQVuWwo9MQgAAEIAABCEAAAgjCuAcgAAEIQAACEIAABFQpgCCsymFHpyEAAQhAAAIQgAAEEIRxD0AAAhCAAAQgAAEIqFIAQViVw45OQwACEIAABCAAAQggCOMegAAEIAABCEAAAhBQpQCCsCqHHZ2GAAQgAAEIQAACEEAQxj0AAQhAAAIQgAAEIKBKAQRhVQ47Og0BCEAAAhCAAAQggCCMewACEIAABCAAAQhAQJUCCMKqHHZ0GgIQgAAEIAABCEAAQRj3AAQgAAEIQAACEICAKgUQhFU57Og0BCAAAQhAAAIQgACCMO4BCEAAAhCAAAQgAAFVCiAIq3LY0WkIQAACEIAABCAAAQRh3AMQgAAEIAABCEAAAqoUQBBW5bCj0xCAAAQgAAEIQAACCMK4ByAAAQhAAAIQgAAEVCmAIKzKYUenIQABCEAAAhCAAAQQhHEPQAACEIAABCAAAQioUgBBWJXDjk5DAAIQgAAEIAABCCAI4x6AAAQgAAEIQAACEFClAIKwKocdnYYABCAAAQhAAAIQQBDGPQABCEAAAhCAAAQgoEoBBGFVDjs6DQEIQAACEIAABCCAIIx7AAIQgAAEIAABCEBAlQIIwqocdnQaAhCAAAQgAAEIQABBGPcABCAAAQhAAAIQgIAqBRCEVTns6DQEIAABCEAAAhCAAIIw7gEIQAACEIAABCAAAVUKIAirctjRaQhAAAIQgAAEIAABBGHcAxCAAAQgAAEIQAACqhRAEFblsKPTEIAABCAAAQhAAAIIwrgHIAABCEAAAhCAAARUKYAgrMphR6chAAElCySkWMMlB7+CMxoWqKVhEkndiHikqJkRlcqcciqq5D0aJmWQvXzrvud7FCi5P6gNAhCAgFIFEISVOjKoCwIQUJ1AQrLl3lAte6jcTlfGRGiKu0ZpO0aFaSk8WKJAbfUf11V2TqU2mQrLHJRTUFVoLbJ3CAlk2yqqaHlmmu4d1aGhwxCAAATaIYAg3A48nAoBCEDAFQIJSZang7Q0t1NkgGZwfFDHPvpA0kgt++OZc6JsayVlnqwoshTZmd1Oi4O6x7ywczqrckVtaAMCEICAPwu07E9afxZA3yAAAQh4SSDRmHdLYAD9rWuUtsuo3iEBukhtuyo5V+qgHUfLHcfyKvOrHPR4Zpru43Y1iJMhAAEI+LkAgrCfDzC6BwEIKFNgaEreYq2Gz7guITysty7QpUWeOFtF35jLim1Vjo8yUvXTXdo4GoMABCDgRwIIwn40mOgKBCDgGwKjFuT9VxepvXbCkPCg2rW/rq5cLJn4el+p4+TZyp/tctnEjNReha6+BtqDAAQg4OsCCMK+PoKoHwIQ8CmBkal5W3rrAkZeZwgP8UThPxw8bz9wuiKLzmuv2rk4usgT18Q1IAABCPiKAIKwr4wU6oQABHxeYGSq9YteMYHXjU/0TAiuBasJwz/vTNGN83lEdAACEICACwUQhF2IiaYgAAEINCeQaLTMj+uoffL3Yzp08IbS+r0ljmPWyrcyFugf9cb1cU0IQAACShRAEFbiqKAmCEDArwQS5uWPD2Ly5/dd2TEkJFDySt9kTvSv7wtKyirkB83p+tVeKQIXhQAEIKAwAQRhhQ0IyoEABPxPYGSqdf+VA8MGDogL8mrnjuVX0oa9pad3z4+JJ2Lcq8Xg4hCAAAQUIIAgrIBBQAkQgID/ChiS8x6K7aB54Q9jIjsqoZdf7SmpyrZUJmWa9C8ooR7UAAEIQMCbAgjC3tTHtSEAAb8XGJFqPfrboRE946MDFNHXvBI7/Wd70bmMVH0nRRSEIiAAAQh4UQBB2Iv4uDQEIODfAoON1ps7hms+uPuKDoqYDa7VXv1LceHpc46ZWekxH/j3CKB3EIAABC4ugCCMOwQCEICAmwRGpFo/GtMn9M6h3YPddIW2NXvwjI22HCj7dmeK7rq2tYCzIAABCPiHAIKwf4wjegEBCChQYNg8a+Hd4zp2iAhueqeIQz9/TltWptPEGX+n2D7D6/Wg9nsNu9VnxAQad8cc0gYGU272btr+xd/oxodeouCw6knnuueFR8XShD+9TB31Pes1Y3dwemvTOUeJRhd+LJVVKJAOJUEAAhDwiACCsEeYcREIQEBtAoZky9CwQGnLg1dHRTTV94qyQvr+wwUkwmplRdmFcFv7WRFoi/JO0OhbZtQ7/ZcvXqOyQqvz8/kn99cLwuKcA9s+uxCMmwrKtY2t2FpUeLakarLZFPuN2sYG/YUABCBQK4AgjHsBAhCAgBsEEpMs9/XUB/5t4rCIyKaaFyH1wNbPKPHqqfTT6hfoqrvm1Zu5bS4IF1qO0fa1r9BVd8+jwtyjF4KwNiCYfvh4EXXpN4r6X/Y75yXtlRXOrw0ce1ujGefvD5TR3pPlT5nTYl92Q/fRJAQgAAGfEEAQ9olhQpEQgICvCYg3yY3qE5JyWZ/QJksXM7sdYrpT7+E3NAqw4oTWBuHapRF1LyZmnTcsf4bG3DKzURDee6KCth4pX54xP+ZhX7NFvRCAAARcJYAg7CpJtAMBCECgjsDw+dZ/XtE/9P7E+MYPyolZ3e9XLLgwC9zcWt+GSyNqZ3jDOuqcSyYutvShNkyfPryj0bIL8b1sSyV9u790w855ugkYOAhAAAJqFUAQVuvIo98QgIBbBUbOt3x65aDw25p6m1zD2d6mZm7b+rBcbafE+bs3vN3kw3LiMyfOVtHXe0t+2pGi+41bIdA4BCAAAQULIAgreHBQGgQg4LsCI+ZbV181KOz3DYNwbejNO25u1Lm6O0I0tzSi7knNzQhfKgQ7g3B+FX2dWfLjjnm6cb6rjMohAAEItE8AQbh9fjgbAhCAQJMCw1Osy8f2D502uFv9pRHNhVfx9e8+TL0wg9vWICzWHp/J3lVvS7WmCjycW0nfHShdt3OebiKGEAIQgIBaBRCE1Try6DcEIOBWgURjbtKIXqGmsf3qPywngqo4Gm6LVrv+t3bXh7YE4Ybbp12sgxnHy2nb4fLX9izQzXQrBBqHAAQgoGABBGEFDw5KgwAEfFcgMdl6R3y09q1bR0Z2qO2FeEhu/VtP0tV3pzTaxUF8pm6QPZG5pcl9hOuK1J1dFl8XO0Q0teTiyjuTLmypVnv+N+ZS2n/K9mimSf9331VG5RCAAATaJ4Ag3D4/nA0BCECgSYGBKXn9QyXa9fC1UWFKJHrvh8Ki0nLHb/el6bcqsT7UBAEIQMATAgjCnlDGNSAAAVUKjJhvPTN5TIfY6HCNovp/vlKm974vOL9ngV6RIV1RWCgGAhDwawEEYb8eXnQOAhDwpsCwlLzXR/QKfmR07xBvltHo2vtOVtDPR85/ujNF93tFFYZiIAABCHhYAEHYw+C4HAQgoB4BQ7LlN2GB0n8fvDoqQkm9/vCnwsJzJfY/mtNjP1dSXagFAhCAgKcFEIQ9LY7rQQACqhIYmWrdffWg8GH9YgMV0e+TZ6voqz0lx3bN1/VSREEoAgIQgIAXBRCEvYiPS0MAAv4vkDjPcntksObd+8Z1vLB7hDd7/fHPRYWWgqpnshbGvuPNOnBtCEAAAkoQQBBWwiigBghAwK8FRi3I2zyiZ/DVw3t6d61w1ikb/XSobO/OFN1QvwZH5yAAAQi0UABBuIVQ+BgEIACBtgoMTs4dLBPLmHp5B6lzhLatzbTrvOJymT74obDKLtN1Wem6H9rVGE6GAAQg4CcCCMJ+MpDoBgQgoGyBBKNleodQzeJ7rujQQSN5/o/elduKCvOL7QszTfoXlC2F6iAAAQh4TsDzfxp7rm+4EgQgAAFFCQxJti7VddA8OHlMB4+uF/5iV3HJ6ULHZ7vnx/xRUSAoBgIQgICXBRCEvTwAuDwEIKAugRHzre9Eh2t/f+uoiA5aD8wMixCcW+zYtHNezO3qkkZvIQABCFxaAEH40kb4BAQgAAGXCgxOsbwUFiA99NthEZG6SPesGS4oc9BXe0sLi8sdn2bM1/2fSzuAxiAAAQj4iQCCsJ8MJLoBAQj4loDBmPuwxKTXL+8boh3Ry7W7Sew9UUHfHzwvM05PZ5p0y3xLBtVCAAIQ8JwAgrDnrHElCEAAAvUEEo2nBwUHBryilWjM5f1CIwfEBbVL6IilkrYdOV9kq5KzbFXssX1pMTvb1SBOhgAEIODnAgjCfj7A6B4EIKB8gURj7i3BASyZMykhMT4ovLcukFq6ZOJsiYOyrZVkzqkoccj8aEUVpZlNuk+U32tUCAEIQMD7AgjC3h8DVAABCEDAKZCYlDdK0tinajXaPzhkru8coa3QR2o6hgVLFKhhRIyoys6pzCaTtchelF/iCCRGBbLMP7VzWmFO0/8ISghAAAIQaLkAgnDLrfBJCEAAAh4TSEw6241T1TBi1FfSsHgNsT9yTpwz+sDu4DmcKDuA+J69ptijHisKF4IABCDgZwIIwn42oOgOBCDgnwKJyZZszpnDbNL1988eolcQgAAEPC+AIOx5c1wRAhCAQKsFEpOtBZzLstkU26nVJ+MECEAAAhBoUgBBGDcGBCAAAYULDJp7LE6SQk6LMovKKkNzlnYrV3jJKA8CEICATwggCPvEMKFICEBAzQKJxtxpnNhyYcA5vy0rPXaNmj3QdwhAAAKuEkAQdpUk2oEABCDgJgFDkuUTYjRZNM+I3sw06f/spkuhWQhAAAKqEkAQVtVwo7MQgICvCVyT8q02z5FQSERh1bXzE2ZTbA9f6wfqhQAEIKBEAQRhJY4KaoIABCBQI5BgzJvESK63FEKWpZH7F8bsAhIEIAABCLRPAEG4fX44GwIQgIBbBRKNljc40fS6F+GczclK1z3v1gujcQhAAAIqEEAQVsEgo4sQgIDvChiSLceJU/d6QZjYd1km3TW+2ytUDgEIQEAZAgjCyhgHVAEBCECgkcDgZMtYmdNPTdHYHLLuyKK4PLBBAAIQgEDbBRCE226HMyEAAQi4VcBgtJqIeFJTF+Gc7s1K13/g1gLQOAQgAAE/F0AQ9vMBRvcgAAHfFTAYLeKBuOHN9OA9s0l/v+/2DpVDAAIQ8L4AgrD3xwAVQAACEGgkMMh4sp9EgYcuQmM1m/R60EEAAhCAQNsFEITbboczIQABCLhNINFofYITf/liF5C54+r96V2+d1sRaBgCEICAnwsgCPv5AKN7EICAbwoYkiwbiNENF6+epZtNOqNv9hBVQwACEPC+AIKw98cAFUAAAhCoJzAs5WjHKkdoQZ0vbuCc92eMlRGxPCJes3Ua+8Vs0o0BHwQgAAEItE0AQbhtbjgLAhCAgNsEDMm5dxNJv2ckfSZL8mdZqbpSgzH3Z0ZSfqZJN3H4nDMxlVppCnE2xaFxPHggNe6Y24pBwxCAAAT8WABB2I8HF12DAAR8VCCFS5TK5LrVG4yWnxljeZlpulvqfl2E4t3YT9hHBxplQwAC3hZAEPb2COD6EIAABFogYDDmbicmWc0NgnALTsVHIAABCECgGQEEYdwaEIAABHxAwGC0bicii9mk+50PlIsSIQABCPiEAIKwTwwTioQABNQuYEi2bicuW8ymWARhtd8M6D8EIOAyAQRhl1GiIQhAAALuEzAYrb8QozPmNN0k910FLUMAAhBQlwCCsLrGG72FAAR8VMAZhLl8xpweiyDso2OIsiEAAeUJIAgrb0xQEQQgAIFGAolG6w5O/JTZpL8VPBCAAAQg4BoBBGHXOKIVCEAAAm4VSEy27uBcPmU2xSIIu1UajUMAAmoSQBBW02ijrxCAgM8KJBotOzmjk+Y0/W0+2wkUDgEIQEBhAgjCChsQlAMBCECgKYFEo3Un5/JJc3osgjBuEQhAAAIuEkAQdhEkmoEABCDgTgGD0bKLET+eaYq93Z3XQdsQgAAE1CSAIKym0UZfIQABnxUQQZgzOpaVpv+9z3YChUMAAhBQmACCsMIGBOVAAAIQaErAYLTs5pyOZqUjCOMOgQAEIOAqAQRhV0miHQhAAAJuFBBBmIh+NZv0k914GTQNAQhAQFUCCMKqGm50FgIQ8FUBgzE3g5h0xJym+4Ov9gF1QwACEFCaAIKw0kYE9UAAAhBoQsBgtGQQpyPmdD2CMO4QCEAAAi4SQBB2ESSagQAEIOBOAWcQJnbYbNJNced10DYEIAABNQkgCKtptNFXCEDAZwUMSZY9xNhBs0l3h892AoVDAAIQUJgAgrDCBgTlQAACEGhKwGC07CFCEMbdAQEIQMCVAgjCrtREWxCAAATcJJBgtOyViO3PNOnudNMl0CwEIAAB1QkgCKtuyNFhCEDAFwVEECbi+7NMsQjCvjiAqBkCEFCkAIKwIocFRUEAAhCoL5CQZNnHGDObTbqpsIEABCAAAdcIIAi7xhGtQAACEHCrQGKSZR8nbjanxyIIu1UajUMAAmoSQBBW02ijrxCAgM8KGIy5mUTSPrNJd5fPdgKFQwACEFCYAIKwwgYE5UAAAhBoSsBgtGQS8X1mUyyCMG4RCEAAAi4SQBB2ESSagQAEIOBOgZogvNdsir3bnddB2xCAAATUJIAgrKbRRl8hAAGfFTAk5ZqJsQyzSX+Pz3YChUMAAhBQmACCsMIGBOVAAALqEOCcf0dEgTW93coYe/piPTckW8yM0+5Mk/7elghxzicQ0bU1n/2WMba+JefhMxCAAATUJIAgrKbRRl8hAAGvC5w/f/74d9991/3DDz+k/fv3U6dOnej222+niRMnVsXFxT2q1WqXN1WkCMKc0+6sZoKwxWIpfuqppyIOHTrU6PS4uDhatmwZ9erV6yYEYq/fAigAAhBQkACCsIIGA6VAAAL+LVBZWZn3zjvvdP7nP/9JN910E40fP55yc3PpvffeIxFWk5KSePfu3R9mjL3dUMJgzM3ijO3MStPf1/B7nPNpBw8eXP7444/TsGHDqHfv3vU+EhQUJII2xcTELGGMPeffyugdBCAAgZYLIAi33AqfhAAEINBmAc75J3v37p382GOP0d13300PPfQQaTQaZ3v79u2jJ598ku655x666667KkJDQ0MaB2FrFie+M8vUZBBe/MMPP8xKSkqi1157jRITE5urcw5j7Pk2dwInQgACEPAzAQRhPxtQdAcCEFCmAOc874svvui8YsUKmjdvHg0YMKCciN4gojsKCwu7PvXUUxQfH0/PPPMMdezYsdESBkNy7n7i7BezSf/HJmaEN7777rvj//vf/9LLL79MsixTZWUlnT9/XrQl2q0gog2MsVuVqYOqIAABCHhHAEHYO+64KgQgoDIBznklEQXU6bYz7IqH2nJycr564oknaOzYsTRjxgwKCQlptITBkGzdT5w3GYRtNtvBF154of+ZM2do0aJFlJ2dTf3796fNmzeT3W6nSZMmnWCM9VAZOboLAQhA4JICCMKXJMIHIAABCLRfgHO+lYgGE5FY9nCeiF53OBzxx44du+Zvf/tbF/Hg3Isvvkj9+vWjoKCgRksYEoyWA4zoZ7NJf3/DaoqKiornzp0bERYWRgMHDqQvvviCTpw4QYMGDXIuw7jhhhvKtVptaPt7gRYgAAEI+JcAgrB/jSd6AwEI+IAA53z2wYMHF4mH286dO0cdOnSg559/noYPHy6qt2u12rozx84eVQdh+WezKa5RED5+/DgXM8o5OTk0btw4uvXWW6mqqorWrl1L27Ztc65HnjZt2jcBAQHjfYAHJUIAAhDwmACCsMeocSEIQAAC1QKc8w9Onz5996+//kqlpaW0cuVKEtuezZ07l26++eYMSZKcibjukWC0HmDEt5lN+gfqfp1zvjgrK2uWOPe3v/1tvYfwxBrhJUuW0Pr16+mvf/2rWHqBh+VwE0IAAhCoI4AgjNsBAhCAgIcFRBAmoguvSi4uLqYFCxZQVlYWLV26tHTgwIERjYJwkuUgI/rJnK5/sEEQPkxEfet8zUZEt1ZUVHxVVlZG+fn5JGaeb775ZvHrJkmSrvdwd3E5CEAAAooVQBBW7NCgMAhAwB8FxMNxnPM3c3Nzezz44IPOl2k8/PDD9O2339Ls2bMpOTlZPNzW1MNyBcQpz2zS9a91EfsHFxcXLxcPxXXt2tW5h3DtlmyFhYW0ceNGuu6665xbs/Xo0UPsU1weEhKCtcL+eGOhTxCAQJsEEITbxIaTIAABCLROgHO+hoiuIqKOIqROnjxZvOnNORPcpUuX0l27doVPnz69NgivbbjVmcFoOcQ5/yErPfb/6gThxRaLZZbYLo0x5gzBaWlptHWreC6PnLtQiGAtgrB4CG/u3Ln2oKCgRuuPW9cTfBoCEICA/wggCPvPWKInEICAggXKy8utb775ZsyePXto8eLFtGrVKmcY1uv1m4godO3atWNFiF26dKl44O1Nxtif63anOgizLVnpuml1g7Ddbp/1/vvv01tvveV8mYbYi/jYsWPOtcdi67TY2FgSL/F45JFHaOrUqeWMMcwIK/g+QWkQgIBnBRCEPeuNq0EAAioVEC/U2LBhQ2fx9jej0eh85bFWq3UQkS0vLy90zpw5JEmScx/gTp06LSWiGUQUWMMlJybnZXMub8lKj70QhMX3OOcn9+7dGy/C7rXXXkvPPfdcZUhISJ7NZusqXqohdqMQb65btmyZmIHOYIw1ehBPpUOCbkMAAhAgBGHcBBCAAAQ8IGC32ytsNltQ7S4ON910E40fP56sViv9+4WrffAAACAASURBVN//dr4FTswIDx06lAIDA5dUVFTMSk9PJzGDLELs794OO8IZ+y7LpHuobrlizbHD4VizfPnyoOXLl1/YPq2ioqLhbhRWSZL0HugqLgEBCEDAZwQQhH1mqFAoBCDgqwIirBYWFn519OhRSkhIoHXr1jmXRhw+fJgiIyOdD7Q98MAD4o1yzn2F+/bt2zgIvxt2hMv8u6z02HpBuGZWeLEsy7O2b99O//rXvygjI8M5uyz2FBYP5A0YMMDBGDMyxp73VUPUDQEIQMAdAgjC7lBFmxCAAAQaCHDOi4gosgUwYvszsSzi9ZKSkkAxgyzW9974d202cf6tOT324abaEDtIENE8IurexPe3McbGtuDa+AgEIAABVQkgCKtquNFZCEBAKQJilpiIriOiQ4yxt+vWxTmfyzlP27ZtmyRmj+fMmSOPWVR6lIi+MZv0f7pUH8Sb64gor2G7lzoP34cABCCgNgEEYbWNOPoLAQj4hIDNZuNiJwixvGHYsGFZicnWIGK0yZymn+4THUCREIAABHxAAEHYBwYJJUIAAuoT4JybiUi8PEPMGBsMyZZskvlGc3osgrD6bgf0GAIQcJMAgrCbYNEsBCAAAVcKiCDMOH2dadLX21/YlddAWxCAAATUJoAgrLYRR38hAAGfFDAYLb8yRusz0/SP+GQHUDQEIAABBQogCCtwUFASBCAAgYYCiUbLr8RpfWY6gjDuDghAAAKuEkAQdpUk2oEABCDgRgERhDnRV2aT/lE3XgZNQwACEFCVAIKwqoYbnYUABHxVwJCUe5Qkts6cphd7DOOAAAQgAAEXCCAIuwARTUAAAhBwt4AhyXKUGPvSbNLNdPe10D4EIAABtQggCKtlpNFPCEDApwUMyZajxOlLs0mPIOzTI4niIQABJQkgCCtpNFALBCAAgWYEDMbcY8Slz83puseABAEIQAACrhFAEHaNI1qBAAQg4FYBg9FyjDj/3JweiyDsVmk0DgEIqEkAQVhNo42+QgACPitgMOYeZyStyTTpHvfZTqBwCEAAAgoTQBBW2ICgHAhAAAJNCVQHYVqTaYpFEMYtAgEIQMBFAgjCLoJEMxCAAATcKWBIthxnnH2aadI96c7roG0IQAACahJAEFbTaKOvEICAzwpUB2H+aaYpFkHYZ0cRhUMAAkoTQBBW2oigHghAAAJNCBiMuSeISavNabqnAAQBCEAAAq4RQBB2jSNagQAEIOBWAYPReoKYvNqcFosg7FZpNA4BCKhJAEFYTaONvkIAAj4rYDBaThLRKrNJ/7TPdgKFQwACEFCYAIKwwgYE5UAAAhBoSsAZhBl9bE7TPwMhCEAAAhBwjQCCsGsc0QoEIAABtwoYjNaTjPjKTJP+L269EBqHAAQgoCIBBGEVDTa6CgEI+K5AgtGSIxF9hCDsu2OIyiEAAeUJIAgrb0xQEQQgAIFGAiIIE6cVWen6Z8EDAQhAAAKuEUAQdo0jWoEABCDgVoEEozWHuGNFVnocgrBbpdE4BCCgJgEEYTWNNvoKAQj4rIDBaDlFRB+YTfpZru4E53wxEXEiKmSMPd/W9jnn04io3yXOb9c12lobzoMABCDQlACCMO4LCEAAAj4g4AzCTPq3OS3mOVeUyzmfcOLEibfff//9rt988w2dP3+ehg0bRvfdd1/h5ZdfvkSj0SxqzXU452vWrl07KS0t7aKn3X///TRz5sw9jLFhrWkfn4UABCDgDgEEYXeook0IQAACLhYwJFtPEaf3zSbd7PY2LWZuDx8+/PLs2bPDg4ODRfilwMBA+uijj8hsNtPixYurxo0bN681s8Oc840ZGRnjf/755ybL27p1q7Ptxx9/XFzvBGOsR3v7gfMhAAEItFcAQbi9gjgfAhCAgAcEDEbLaSL+ntkU2+4gXFhYuM9kMiUWFxdTeno6de7c2dmDvLw8mjNnjjMUp6enH4mOjr7UMocLPRdBmIjGN0Vx4MABevrpp2nUqFGO2bNna0JDQw8yxgZ6gA2XgAAEIHBRAQRh3CAQgAAEfEBABGHO+L+y0mLntKXcoUn5Xe0aR2Lq7yLu7SXtv/eJJ56gJUuW0PBRl5fuOGb7QhcZkNdfr7n/o48+ily5ciW99NJL1Lt375sYY+tbcj2x1IKIGj3IV1JSMmTBggUxv/76q7PNnj17FhPRHS1ttyXXxmcgAAEItFUAQbitcjgPAhCAgAcFDEbraU70zyyTbm5LL5uQZB3HJH47cZpAxLoQlzM+fbxz/x++fK/rxo0b6eWXX6YMa8SO81UUWWaTO/XTBXQY3StAW6f9hxhjb7f0eg0/xzmfvXHjxkXJycn05JNP0h133EGMsTmtWXLR1mvjPAhAAAItEUAQbokSPgMBCEDAywIGo+UMJ/5ulim2XhBOnGvRZy7UW+qWZ0jOvZtIepRkuRMRW8E5W5u1UJchPmOz2U688MIL3crKyuixxx6jzz77zLFmzRpNUVGRWLpAD//pzxV5mj5nfjhc1eWTHeV/k6vsr2Qt7nqiLd23Wq05SUlJXcW5ixYtok6dOm1ljF3RlrZwDgQgAAF3CCAIu0MVbUIAAhBoh0BikuU+zvjvOJdWZaXrVommRBAm0rxtNnU2DjHm9rIzze0Sl28lbr83M73rSfEZ5wwwk9OIJC3n8otZ6bFrGpZx/vz5EwsXLux29OhRkmVZhFOaPHkyVVRUkFgSceLECZo9e3ZV/+HXzr1l2blYTvwxTtL8LJOutbtILN6wYcOspKQkEjPCkyZNwpKIdtwTOBUCEHCPAIKwe1zRKgQgAIE2C4hZXi5R7v8a4KuI2A2c2B5GPJKIhovvcaJtWSb9WPHfiUZrEic+ixF7OtOka3Y5Q3l5eUV6enrQV199RRMnTqRZs2ZRaGio81L5+fkkgmt5eblYP5wdFxfX1zD7ZF+uDXiBkdSRM8fMrLQ4c0s6VlZWdmL+/PndcnNznWuDY2JiPmSM3dOSc/EZCEAAAp4SQBD2lDSuAwEIQKAVAolG63ec+FUXPYXzZHN6rCnBaHmfcdJrSfPgnvTO4sUbzR7l5eVc7BTx/fff81dffZUNGTLESkSfElEEEU3esGFDkAjDS5cupXHjxl1YI2xIyn2SGJvHZPm+zIVxX17sGmJ7tszMzOUzZsxwrgt+9NFHbZIkBbei+/io9wTEP7SGEpFYwiJ+FTuHiOUtHYkokIjsRFRE5PyHWjYR7SGibUS0S2w84r2ycWUItE0AQbhtbjgLAhCAgFsFDEm5RmLsom+n4IyNYESpnJM1y6R7qCUFlZeXF6enp0dkZGTIr7zyitSrV68ljDHnSzo45z/t2rVr7PTp02uXM1z4nvh+4ry8iVyWPyNOU83p+tXNXU+8XOPdd9+d9NZbb9Frr71GI0aMwNrglgyO9z4jfiRgIBIPVToDcDwRiUAcRkTiHzAiAIuHKEVmEG8gdBBRJRFVENF5IiohojNEtIOIxC4jO4lILIXBAQHFCyAIK36IUCAEIKBGAUNy/mjiju3N950d5iTvZpwVmtP101tqJMvy8VdeeaX7pk2baNmyZWKLtAt/D3DOP9i1a9fddYLwJsbY9XXbNhhzryOSNsok37jfFCv2Dm50lJWVWU0mU0ztsoioqCjsFNHSAfLs58Qsr/ipwx9qltvoiCiKiALaUIaYKRbhV/yEYT8RifXpXxFRvQc529AuToGAWwUQhN3Ki8YhAAEItF3AYLQcI6Km38DG2C8k89PmdP1trbkC5zxj06ZNQ2fPnl27/OFNxtifRRtiRnjt2rVjxQ4PNTO59WaEa69jSLJMJkYvM669IjO9k/NBvbrHqVOnuNgubejQofTcc88VBwQEdGhNjfis2wXELO/lRPQAEf2GiOJqZn9ddWExUywCsFgu8e+aWeIyVzWOdiDgSgEEYVdqoi0IQAACLhQwJOX+gxhrbsmD1V4p9T24JEb8WLrFB+d8scVimfXMM89QWFgYpaWl5et0uk/EGuH8/PwpSUlJgTVvlqPIyMibiGgZEQ2ouYCVMaYX/51otMznRIPNJv3kuhcX7WdkZMx65JFHSLy0Y+rUqXsYY8NaXCA+6G6BbkQkHlqcSkR9iCjcjRcsJyKx9d4XRCQe4BQzxTggoCgBBGFFDQeKgQAEIPA/AcM8y2SSSYTUBgdzcC5Pbmp7tJb4cc6P//LLL93FrHD37t3pzjvvdJ5Wu33a888/T6NHj3au6619uG7Pnj2NllIYjJYfObHlWSbdu7XXFa9a3rRp0/g6M86Nlle0pEZ8xuUCEhGNIKIZRCT+gSOWQYivufuQiaiQiLYQ0d+JSCynEWuMcUBAEQIIwooYBhQBAQhAoLHAkL/khjmCWWkTNsfNJn3PtpqJN74R0ZxDhw5Fvv322/TDDz84mxo3bhxNmzaN+vfvL9Z5/lG8BvliQTjReOYazqR/mNP0YmcB5yGC8Nq1a8enpaXRm2++KR6Ua3J5RVtrx3ltEhAPul1NRM/ULIUQD8J5+hAP1YmXurxORGJvbPGwHQ4IeF0AQdjrQ4ACIAABCDQvYDBaxFP4N9b9BCc+N8sU26oXXDS8Audc7BCwmIgGElFQzfdtRHSAiJ4TIbgm2B4oKSkZsGTJEhLLHbp27Vrv741Eo0VsvbYh06QXs30iCL9BRLUP74n2bq1tC+PsFQERgscTkfjHz2VEFOKVKqovKsKv2If6FSL6EGHYiyOBS18QQBDGzQABCEBAwQIJSZanGaOX6pYo2Sui9z3fo8BVZYt9f4mof+02arXtirDMOX9v27ZtunXr1ok3zuWFh4eLH6lfOAYZc6+XiBaZTbGjXVUP2nGZgFj6IGaCk8SEf51/8LjsAm1oqIqI9hLRX8VqHCyTaIMgTnGpAIKwSznRGAQgAAHXCiQaTw/ipMmq02qG2aR3vlnOE0dlZWXFm2++GSSWTQwbNuzCDhN1r20wWg5xLt+blR53ke3ePFEtrtFAQKwJFjPBt3h5JrjhwIiZ4Z+ISPxUYwNGDQLeFEAQ9qY+rg0BCECgBQIJRusBRrx65wYuPWVOj3m5Bae55CM1Sx1+S0T/rd1mrWHDiUbLi5yoyGzSX/QFIC4pCI20VEDsDjGTiMTWeN5YE3ypOsWa4c+IyITdJC5Fhe+7UwBB2J26aBsCEICACwQMRuvLRPwJ0ZRMrP9+k+6wC5p1WRMGo/UmYvxpc5q+3lpml10ADbVWQOwTLLZHSyWi7q092YOfF69kFg/PvUBE2GfYg/C41P8EEIRxN0AAAhBQuIBhnmUCyeItXbzUbIqNUFq5g2cXRsla22GzSd9ZabWptB7xUNy8mm3SPLFFWluZxdZq4nXMYlZ4bVsbwXkQaI8AgnB79HAuBCAAAQ8JGIwWTpwfMKfHDvLQJVt1GYMxN9+u0Qw5mBpzulUn4sOuFhCvTRa7dogH5BT3j6YmOiteuvF+TXDH65hdfTegvUsKIAhfkggfgAAEIOB9AYPR4mBMWpeZFvM771fTuIIEo2UvMXZ/VpputxLrU1FNVxLRAiK6xof6vK9mVvhjH6oZpfqJAIKwnwwkugEBCPiXwJCUs/EOhyORMd6Tc4phzvWe8m6ZpA8Z46c4SQeVFDqdb5ljbHZWmk68QQyHdwTCiOhhIhIPLbrz1cmu7p2YFX6nZha7yNWNoz0IXEwAQRj3BwQgAAGFCAxOsl6l0dKdjLFJMuedO4VrKjpHaDuGBjLSahjJnMhWJVNBmaP4bKlM522OoKAAaWt5pePD4PDAj3fOjvZaiEgwWn4ixp5DEPbqzTS4JkxWvzPbtw7xD6hkIvrOt8pGtb4ugCDs6yOI+iEAAZ8XMCSduT84UDMnQMPiEuKDI3vFBFLnCM0l+1Vp53Q8v5IOnqksOZFfFSxJ7G2HQ34x06TPvuTJLv5AotGyT2bsj0qapXZxF32huduJ6EUi6u0LxTaoMbem9novj/HBfqBkHxNAEPaxAUO5EICA/wgkzMsfH6Lhr0SGSl3G9Anp2LNzYJs7d94m054TFbTzaDmJZRSZJv38NjfWhhMNxtyzsqxJ3L8w5kwbTscprhGYVbPWNsA1zXm0FTsR/ZOIxH17yqNXxsVULYAgrOrhR+chAAFvCSTOsy4MYPTk1QlhIQPiglxWRmmFTN8dKCs+U2A/bausui8zvcsOlzXeTEMD5+R00mi0B8ym2Bh3XwvtX1TgrZo1wr7KtJ6I/kFEq321A6jb9wQQhH1vzFAxBCDgwwJD/pIbFhipWdM5XDNqwtCIDsEB7vlj2JxTQd/tP293kOOerLQ4tz6Nnzj3zESukR4zp+lvUvLQcM7F64bF9mKFjLHnlVxrG2sTryu+oY3nKuG0DCL6mojEzDYOCHhEwD1/AnukdFwEAhCAgG8JDEs52lEjhX3bPy7IcNXAMLf/+PpUQRV9vrPYVsXZn7PSdOLHzm45DEm5Sxmj/ExTbLpbLuCCRsWrojdu3Dj9ww8/pJdeeqk4Ojq6gwuaVVoTmURkUFpRrajnBBGZiejmVpyDj0KgXQIIwu3iw8kQgAAEWi4wMtWybWCXkBHjBoS6PQTXVmUtttPq7cU2h4PfY07Xu+VHzgZj7q8S00zZlxYj3hKmuEPMBGdnZ6fOmjUrMDIykpYuXUpRUVH++PefWJ8dq7gBaHlBBUQkXqqhyJfGtLwb+KQvCfjjHwS+5I9aIQABlQiMSM17r2fngLtuGByu9XSXc85V0dqdxZUy0Rhzmn6PK69vMFpvYsRTMk36sa5s11Vtcc7XZGdn35SWlhZoNpspMTHRn4NwGRGFusrOC+3YiOg8EUV74dq4pEoFEIRVOvDoNgQg4DmBhLm5/9cxXPvX+8Z19NqP4/eeqKDt2ef37kzRDXVFz3s/l93h18V9igxJuV8QozVmU6x4yEkxB+d8ms1mW7Rhw4aY1157jaKjo0mSJAoICPDnICx2Xrj0vnuKGaVGhchE5CCitm+foty+oTKFCiAIK3RgUBYEIOAfAn3nnIkJC5B+vW1Uh/DYjh6fDK6H+NmO4qKcs1ULzen6Je3RHWQ8c7NGzNzJUgBn/BVzeqzifpTNOV+8a9euWdOnT6err76annjiCXrrrbcoJyfHn4OwCJFSe8bWy+dyIhJh2Lu/UbyMgMt7VgBB2LPeuBoEIKAygaHzrK8kxAc9dtVA8fZb7x4FZQ5a8VOhjTuoR+ZCvViL2erDYLSaiHgSI/laTuwFxtiyzDT9v1vdkJtPEEE4MzNz1tGjR2nChAkky7ItPT09yFeDcEIKD5SqrFEkOaKJa6JII0URl6NkmUcTY1GMWFTWwrjHuOzw5SAsZrQricj7v1ncfH+ieeUIIAgrZyxQCQQg4GcCQ5Pyu9qZ4+S0a6JYSKAy8sm3WaVV5lOVi81pOvE62xYfCUlnxjCmWUzErxEnMaIPOOdac3rs1BY34sEPiqURRPQaER0golfLy8tTFi5c2M2rQZhzZphfHEU2WzQFOKIYl6I449GMsygS/y/x6mArsajqr4mQy6OIxH9TEDE6R4wVcM4LiHiBROyc+JUzVsA4O2deFL+QOyp9eY1wqdjajoi6efBWwaVULoAgrPIbAN2HAATcJ5BotCYN7Bo4d7whXDHhRMwKf7ytsDgjVd/i9coGY+5TRCyt7kwd53SGMf4CI5IzTbHL3KfompbPnz9/wlVBuG/K2cgAuy2KcW0U07IocsjRIsSK8Mo5j2aMOcMrZ7z6f4tQ6/waF3sYi50RnEGWnEG2OthKjBcQY+fIGXJZAZF0jjO5gEv2Akd5ScHBJQNLWiDxKxH1asHnlPoR8Zrlo0R0hVILRF3+J4Ag7H9jih5BAAIKERiRmnd80oiI7voOylry+Mn2ouLcAvv/XWo7tcEpub1lO1tCjCY3RyoxPmRfWuw+hZA3W0bDIDx4QWloWGRwlEaWoohs0cQl5wwtMTnaOQPLaoMtRTNGUbL4GsnRYgkCEZVfCLKcFRDjBZx4ASN2josQK4KtCLoado4cjgJimgJmDzq37/mOIgS789hKRJe78wJublvM3m8jogfdfB00D4ELAgjCuBkgAAEIuEHAkGwZGhLAfph2TXR4U83bKyvoh48XUfHZHLrxoZcoOExMFlYftd/L3iXeOFv/uPLOJOp/2e+cXzz08+d0+vAOGnfHHNIGBjc6f+DY2yi2z/BGbew7WUHbjpSv3JUS0+yyhsQky31covnEqfdFeA6bTfr+buBrUZMj/7QjoKpLfBTZNVHcIUfbNXJ1mBVLC8QSg5pAS0RR658In/DGskUX1giPe8lWQUyqmYElZ3h1zsgyVkCyWG7AC4izc2LZgZbxAsalc6R1FASczinY+daoqhYV6PkPiTcITvH8ZV12xR+IaBURveKyFtEQBC4hgCCMW8SjApxzsdm72OvSJUd+fj4dPHiQPvroozdPnz59c2ameLESiQdjaMCAARQXFzf9gQceWPeb3/zGJderbYQx1pIfU7r0mmjMtwQSkq0zDV0DX70uockcTLnZu2nvN+87O9VzyLUXwq3437VBuGGQrSgrpA3Ln6GBl9/m/HxTQbhuiJ444+9NBuHC82J5RJF193ydvqGq2BYtRBu+kBg9eilxLtObWQv1f77U5y71/cGzC6MoqCKK2+Vo0mic62WrHwLjzofAnMsKxHpZzmuWGJCYlRV7zYZwogLGqYAxOsc5OWdn/xdweQGXeQFJ7NxPz0X+48XFC3VeXSN8KYj2f38REYnXSPvqIUKwePX1Ll/tAOr2PQEEYd8bM5+umHMe4YoQ2a9fP1t2draWcy4NHjyYrr/+eurfvz/17duXOOfEGKPs7Gzas2cPffvtt86wzDm3Dxw4UN6/f3+QTyOieJ8QGJlq/fiK/mFTEro2fbv98sVr1CGmu7MvDWd1mwvC4rMi/BblnaDRt8xoFITF97asTKc+IyY4Z5rH3DKzySAs2nlj07kKskt996R3PlULakjOm0qyvIgY9WwRMqdN5nT99eKzCSnWcKqoimaB2ppZWTmKRJgVodb58Jd46Ktmlta5vED8d82DYERF4kGw6ofAWJ2HwLhzdpYk7TmS5eolCBrpHLcHFFRp5YIjqZ2KW1SneEuDC9cIt/SaXvjc/xHRi2IG3AvXbu8lxYNyfyOiVCKqaG9jOB8CLRVAEG6pFD7nEoH2BOFBgwatOHDgwB19+/aVDh8+LNKF2GpH7DnZouOaa67Rbt68WdLpdLazZ8+STqebfObMmf+06GR8CAKtFBiZmme+ZXhEQlN7B4uZ3e8/XEBjJj3ubPX7FQvoqrvmUUd9df5saxA+uf8niume4GxDzBxfLAiv2FpUeK5Evj3T1Pm7xOS8KeI1xEQ0rHpDiFYd4qcj4vdjZfVDXtXrZZ3LDGTxEJhYQ1v9EJhzuYGDFZBGc44kucBRWVlwYGFXsRxB7B/r1kMlQfgqIhIPNYpffe0QP85LJ6KPfK1w1OvbAq39A8+3e4vqvS7QliAcGxu7Ijc3944hQ4bcs3fvXrEGrsXht7kOi1DMOV+5ZcuW3997772V7733HmaJvX53+FcBw1Ms+XePi+oUHtR427SGSxrE7LA4xCzvxYJwoeUYrX/rSbr67hTnTG9za4Rrl1BcLAivyyiRf7XaCjixcFYdZNtxaMabTZ2/aUcDbj9VJUFYLHV5moiebcM/aNw+Bhe5gPiH0Oqauo95sxBcW30CCMLqG3Ov9rg1QXjGjBkrXn/99Tt0Ot09FovFJQG4YedFID59+vTKQ4cOTbr77rvv/PDDDzFD7NU7xH8uPnSetWzatVGhAZr6f8w2Ndsr1gtv/+JvFx6aa+/Dci0JwhszSx0HzthOcpnrGWNBxIk5/68VB2fsEHH2rERyhaxhP2Wl6sSPtxV5qCQIi9cr305EYq1wX0UORNNFnSaipUT0cs1P+nyodJTq6wKt+kPP1zuL+r0v0NIgHBAQsCI2Nnbq5ZdfHrRq1SrxpiF3H1q9Xl911VVXVa5ataqds2PuLlUZ7Ys3dxGR80fajDFffkDHLaCD51nK/3RddLBWqv/HrAi9X772SJPXrN0R4mJLI+qe2J4Z4U2ZpVVZZ2zrJE7rZeKnNA750L5FXQ70TDkaHCqHjSbioxnR9cTptxcF0mgN5tROWW5BdGGjnPOfiGhsTZMHGWMDXdi8kpoS+wg/R0TTlVTUJWr5LxHNIaI9PlQzSvUTAQRhPxlIX+lGS4KwXq93WCyWe1JSUj5OTU296DKIq666yrZt2zatw+GQxE4RdQ/xwJz4/86dO9unTp0qL1u27KIBNyUlRfvyyy+vjIyMnHTy5MkAXzH1dJ0lJSXfrlq1atxnn30mZtOpS5cudNttt9nvuOOOr8LDw6v39VL7kcKlodxaeP9VUREN3yjXcBlELZX4elmh1bkVmjjE1mrNbX9We057gvD6vSXlh89UPWJO1/3rUsM1JCVvhN0uj3GGY4ldTpyqFyLXvGEu06S/91Jt4PseExB/dt1KRAuIaJDHrtr2C52smQkW64NsbW8GZ0KgbQIIwm1zw1ltFLhUEI6MjHTExMTck52d3ewDExMnTrR9+eWXooLA1pQhQnFwcHDlH/7wh7vef//9ZpdAXHbZZavNZvOk0tJShOEGwMXFxT+/9NJLY77++muaOnUqDR8+nHbv3i22r6MbbriBnnnmme2RkZGXtWZcfO2z16R8q821DYyXNJp4JsnxTGbxnPF4YiyeOMVzonhG1CVIKzluHx2p7RwhflpdfVxsyYJY/1v70Fx4VKzbg/An24sLzxTb785aoBOzca06Bs85PZBLmtHE+GgiNjrTpK+daW1VO/iw2wTENpXiSUyxXljJP+ES+zF/QkRGIhJvxcMBAY8LIAh7nFzdF7xYEI6KinJ069ZNPBDXZAg2GAwrsrKy7hBbprVXkTFmf/bZZ+9csmRJk4F4woQJq7dt2zapqKgIYbgGW+wqsGnTpkWzZ88mjoTBswAAIABJREFUo9FIkyZNcs64i+3q1q5dSyaTiZ5//nkaP378HMaY2AvU546ElMxAja1zvF0jx0uSFE8yi2eMx8u8+lciFs+I6TjxHCI6JX5lnOcQYzmc8xyNJOVw2Z6Tmd4lZ+SCvPXXDAq/oa/+f/9eEzO4B7Z91ugFGgKqdjlEWEcdDb9xmtuD8PLNBaWV5VWjxXKI9g5UYtLZbpnpncTMHg5lCIg/I0fXBMxblFFSk1Vsr9nlQvxjzKHgOlGaHwsgCPvx4Cqxa80F4W7dujkqKyvFQ3FNhuCQkBBHeXl5uwNwXRMR4m6++ebKL7/8sskZkyFDhqyurKycdODAAYRhsRiY841vvPHG+HXr1tGyZcuoV69eYj3fq0Q07ejRo2OfeOIJuvHGG2nmzJmbGGPOvWWVdIi1r2G2sHimdcTLTIRcHs9qZ3EZFwFXBN1oRjyHE50i8StnORKr/pVLPCdArsrZk97twr67F+ufwWhJHtErZMEV/UKVxOCspaKK0z+/Kzi/Z4EuTHHFoSBXCYQQkViqlEREQ1zVqAvbEbtDiDfI/YOIFPuQpQv7i6YUKoAgrNCB8deymgrC4sG4qqqqNU3tH3nrrbeuWLt27VQx6+iuIzIy0l5cXNxc2BVb+nxARKrfTUIE4bVr145ftGgRvfbaazRixIgljLHnxENze/funfXYY4/RI488IpZMbGWMXeGu8Wqq3ZHzT4eW2eR4jUbrXKLAZB7PnSG3eskCJ2fQjSROpzijHEaUQ4ycs7iSM+TKObJDm7N/YcwZV9WdMC93fKfQgE/uvqLD/96d7KrG29nOEUslfZdV9v2OlJir29kUTle2gHixhli/LbZT66agUvOJ6F0i+isR5SqoLpSiQgEEYRUOuje73DAI/+lPf1qxbt26qdOmTdM0fDBu6NChK/bu3evWEFxrodFo7A6Ho1EYFg/Qvf7661VDhw6dvHHjRlWHYc75mtOnT0969tlnKSQkhJKSks727Nlz94kTJ4YvXry4k8VioZdeeol69uy5ljEmHtZxySHeWKaptMfbNZIz4IpZXPH/vCbkUnXIDeWcTpGYvSWWwxjPIS7lcC7naCRNDnfIOZkL9RaXFNSKRobOs5beO65jWHiwS3+Y0YoKmv7oV3tLK47kVv7FbNJVb2CMw18FxN/xYm/hB2rWDMcpoKPniOjDmhAsZoXdN8uhgM6iBOULIAgrf4z8qsKGQbhjx44OsX/v66+/Lh6YuHBMmjRpxeeff+6REFx70fDwcHszD8hpo6KiygsKClS9RIJzPoGI1uTl5QWlpaXR1q1bL4zXZZddJoIxxcXFiae+b2WMrW/Jjds35XBkUGV4PNNI8XLtUgWxFpezeGLUlYjiiXgwcZYjQi4Ry+GsZhaX8xwuSTlBdkfO7kVxeS25nqc/M3y+9V8je4X8cWQv8VNqZRwOmYvXK8uVcmX3Qy1c5qGMylFFGwXE3/Pi4bk/EpF4Y4s3Z4bFTLD4CZtYUnXUFS9HaqMJToPABQEEYdwMHhWoG4Q7dOiwoqioqMklEYwx7s7lEM11+sorr7Rv2bKlqcC7WqPRrHA4HPUCu0fxvHwxEYStVuu/09LSOh8+fJjuvPNOMhgMZDabaeXKldSvXz9KTk7O1+l094ogPCzlaEdbVUi8JMnxJEvxXGJda9fkMuLx3Lkml2uJ8xzmfNiMckiqfuhMEg+dcTnHYQ/JObAo8qyXu97myycmWa4IDmLrp10THd7mRlx8YsbxctpxtOKznfNixIsXcKhDQPxdH0NEtxHRTCIa7IVui9nft4noPRJLk1zwhlAv9AGX9EMBBGE/HFQld6luEA4KCuI2m03sLVVvA+AuXbo4Tp8+7bWfJYeEhEwpLy+vF3jFG+i2bt1aZbPZVPt7xmaz7XnppZeGbNy40bk7xOjR4qH06uPQoUP0l7/8hcaOHUt/uP+pitv/XlLp/IlnnR0VmMRyxP8Ws7gaLudQVXDOvuc7Fij5fnVFbaNS8zaP6Rty9eBuwa5ort1t/OObc+erHPz6fWn6/03pt7tVNOADAuLPrg5EJNbv/4mIbvLQ1mpiizSxO8TfiehrIhI/vcFyCB+4YdRSomr/UlfLACutn7VBuHfv3iuOHz++xuFw1NslokePHuLrU71Zd82WYI1+bzDGVgcHB69oGJLbWmtikuUvMvFBWemx09rahjvOGzinuJNGWx7PmFiuQDXbhlH8hj9XPfDkk0/S0KFDadasWbR6V1W+6YvS/S/c0aHDjQnaIUuXLqUff/zRuaPEre/IURmpvQrdUZ+vtWlItvwmUKKND14THdzwdcue7su2I+dpX47t413zYu709LVxPcUIiHU6vWt2lBDLJdz50g2xpd7HNQ9Ci236sDuEYm4DFFIrgCCMe8GjArVBuGvXro5Tp06JJQj1ZoMDAwPFNmpemw2ugzGlZqP3C18Ss8LHjh2rOnbsWJt/34j9VolVpXJiD4qGOdGfs0z6Nz01CMPnlMTYnCFX7Kwgx8viV/HQmViLW7vLAvEKsRbXuY2Yc20u5fzt3o5DegSe+kOdLdLqvaKWc56xdu3aocuXL6/dWs25o4Sn+qX06wxNsb7SOybgwRuHRHhticSZQjut2VF03uHQDsSev0q/Y9xen/gzVuwokUhENxORWCbTt/pFge0+xGyv2H1FvPXoUyLKICIr9glutysacJOAK256N5WGZv1RoDYI9+nTh2dnZ9e7/3r27Lni2LFjXp0NvvAvxOoXRTT6/dG9e3d+4sSJVv++Mcy1TOASpTCiem/g4oyNyErT7XbFWCfOtejFQ2eOmpBLjJwh17kW1/kAmnjwzDkjU/3QmViLW7M2l2ukHE1V5SlHoDYnK1XXaNZGrA/Oy8v7SswIDxw4UMwInwwODu5eW7csywdeeeWVAZs3b3YG4e7duz/EGBPrAXE4/8XD2cgF+fsv6xsywBtLJKrsnP79Y2HJ+Qp5Rma6/n0MCgRqBMRkRCci6kNEl9cslxhZE5JbiyT+3NhHRBuI6HuxYqpmGQRem9xaSXzeowKt/gvdo9XhYn4nIIJwcHDwOzabbWXDGVfxUo2TJ08qYTbY6R4eHj6ltLS03lrhiIiIVSUlJY1qb26gDMl5TxKXn6ne/aDRkW826cUDLJc8Bs3Ni5M0YtswR7xc87YzEWzFSyCcr/d1zuqyQrE/Lr+wRy7LkcSaXMZPORz2nLAgKWfn/C7nL3mxZj5gt9uLXn311cjPP/+8do3wRiLaSUQjf/311+vFtmqjRo0Sa4VtgYGBylgQ29bOuuG8xLmWIRot++mGweFhfeq8bc4Nl2rU5OrtRcWW4qq/71sQO9sT18M1fE5APKsRWfNAnditRSyXEA/UiVlisctEZ/FHIhGJ4GwnIvHniHiIVbxcJpuIMonITERiKYRYAyyWRYm1wTggoHgBBGHFD5F/FVgzI/wOEYk1iheWRbz55psrpk+frojZ4FrxxMREyszMrPd7RCyPqKqqqvrxxx+b/b3jDK2SLN7mJLYqavZgxNZlmnQThybld62SxFpcRzyTWbws3nImtg+jmllc5gzR+ReWK1zYI1e89cx+its1OWVBZTnHUntVuPNuEfsI5+fnTxLbpB05coRuv/12GjlyJB04cMC5a0SHDh2cAblXr16KfLOcO21a2vYgY+71Wsb+O2FIhNZTYfjTX4qL8krsn+2erxN7yeKAAAQgAIE6AgjCuB08KpCXlxcRFxdXbLfb6917CQkJq7Kysv7g0WJadrFGv0eCg4N5RUVFo6+LN4kxmT1ORJNa0jQnKmJEEcRYrnN3BTGby2pmcSUpR3ZUndI6pBxHUH5OVmpiZUvadPdnOOcHzp07N2DVqlUkXrV8+vRp6tSpkzMUT5kyhaKjo08wxnq4uw5fbj9hbu74AK306dh+oRFDe7hv4rzwvIPWZZQWlpTLKzJSYx71ZTPUDgEIQMBdAgjC7pJFu00KrFmzJmLu3LnFZrO53r03cuRIx86dOxWzLKK2+CuvvHLKli1b6i2PEOuEL3vxuDZzT2G8JFXGM073ycRuYcTFjxRbdcRodAGbU5n4UaPPHGJmmIjEyzWC6hQt1gGud+Ub5XwGpA2FGlLOJgRLjpVdogK6X5sQFhkS6NpbP+uUjTZnldllLs8ym2KXtqFEnAIBCEBAFQIIwqoYZuV08r777itcuXLlnysrKxtum8aPHz+unEJrKul65YyXo66ed1rm1a/2FcsVTnz8x8Hdp7wfzBkVs+p1cFoiFu58OUQrD05yapYpbn4rT1PEx2veNHcdEX3T0jfJKaJwBRUxODl3ESPpmcv6hQSM6Nn+t8+dLqiinw6XFxaet5+sqOKPmNP0PyqouygFAhCAgOIEEIQVNyT+XdCYMWMKt2/f/lDDB+UiIyN5cXGx4jofNyH9p06jH9oqdlgQr/iVOcs59GKfZIetbGLdYvvPL+4c5CjvJ8usP0nyQM5pICNpABEfeKkticwmPX4fKm7kPVdQwlzrsNBgllrl4DcO7haiGRAXGNA5Qjy71LJDvDL5cG4l7T1ZUVhY5jhvc7DUrLSYt1p2Nj4FAQhAQN0C+AtY3ePv8d7HxsYW5ubmNgrCgYGBvLJSEctgG5o02k84MDBwVWVlpfj6JY9Eo6UPJ9aPE/WTSO4n/puIDyBivWpPZkSPZpr04q1LOFQsMGhubmKAVvNHrcTv02hYWHx0AIvtoA3vEKqh0CBGARIjmRPZ7JxKyh10ttRBJ89VFVqL7B2CA6VvbTbHW5npsWJHExwQgAAEINBCAQThFkLhY64RCAsLKywrK2sUhLVaLbfbFblUtlEQDgkJWVVeXt6iINyU2oBZeRGSlvppmMMZkImxfmaT/n7XCKMVfxAwJFuGck6XB2nZGA2jgTIxsc1eMBF3MBJLctjx8ir6RSK+s7KSbTm4JKbEH/qNPkAAAhDwtACCsKfFVX69QYMGFe7fv79REA4PD+elpYp8+2ajIExEq4iozUFY5bcAug8BCEAAAhBQjACCsGKGQh2F3HDDDYVff/11oyAcFxfHz5wRb+VU1qHRaKY4HI56u0YgCCtrjFANBCAAAQhAoK0CCMJtlcN5bRJYsGBB4Y8//hi2fv168YaiC8ewYcN4RoZ4Jb2yjuHDh0/ZvXt3vSCckJDgyMrKavnTTMrqEqqBAAQgAAEIQKBGAEEYt4JHBX744YeIKVOmFJ85c6bevafT6VZbrdbfe7SYFlxs6dKlU5566ql6QVin03Gr1YrfOy3ww0cgAAEIQAACShbAX+ZKHh0/rE28YjkiIqK4tLS03r03a9asVUuWLFHUm+ViYmIoLy+v0e+RsLAwXlZWht87fnh/oksQgAAEIKAuAfxlrq7x9npvRRAePXp0cWho6OTvv//+P3ULioiI4CUlynn4PTAw8K6GL/4Q9d511118xYoV+L3j9bsJBUAAAm0VGDlyZKgkSf/gnN9dp43FO3bsmF37v0eNGvV/RNS/7tdac73Ro0dfTUR/kmX54Z07d55vzbn4LAQ8JYC/zD0ljes4BUQQHjJkyDv79u0T+53WW3Kg1WpX2e12xcwKP/bYY1NeffXVRg/KRUdHrzx37lzDr2OEIQABCPiEQJ0QvGnHjh3viKJrvyb+uza4Igj7xHCiyHYKIAi3ExCnt05ABGHGWElISAgvLy+vd/9dc8012s2bN4tXFnv9uPLKK2nLli2Nfn+EhobyZ599VpOamip7vUgUAAEIQKANAiNGjBgkSdI/ZVl+YNeuXftrm6j7dUmSxhLR2+J7jLEPRTjmnPeQJOm/RNSj5pzjsiz/VrQhztVoNI/VTHg8Is6pM9v8M+f8lp07d+a3oVycAgG3CiAIu5UXjTcUqA3CRLT68ssv/2Dbtm31lkcwxlZzzr3+0NyUKVOmrFq1qtGs74QJE/j69evx+wa3NgQg4LMCI0eO7MwY+4KINl9s2UPdGeGakPxfxtj9v/zyy3cNZ5DrhOQFtbPMWBrhs7eIqgrHX+iqGm7vd7Y2CM+YMWPVjz/+eFtGRka9bdRSUlK0ixYtqvLy65bvIqKPGmr169fP0bVr1zs3b96MZRHev5VQAQQg0A6B2mDb1OxubbOXWhohvs8YG19ntrjeLDOCcDsGCKd6TABB2GPUuFDNj8ycSyPEf/fq1YuPHDly8ieffFJvVviuu+5atWLFCq+sFY6IiKCSkhKxR3C9pQ/PPPPMinXr1k3dv38/fs/gVoYABPxKQARWzvlm0anaZRDi4bamgnCd2eTL6n6+ZkYYQdiv7gx1dAZ/qatjnBXTyzpLI+jxxx9f9fnnn9929OjRerPCotjAwMDVlZWV3lgi0SgEi3ri4uIcY8eOvfM///kPZoMVczehEAhAwJUCtSGXMfacWP5QNwg3CMDTxPIHzAi7Uh9teUsAQdhb8iq9bt0gXEOwOjAw8IPKysp6s8K13yMiT4bhJkNwz549Vxw7dmxNU8slVDqM6DYEIODDAnUDbN1tzRruJlE3CDe1zAFB2IdvApR+QQBBGDeDRwUaBmGxU8SPP/5Y9dxzz002mUyNwrAHH55rMgTX4DiISMxaY6cIj94tuBgEIOAOgeYelqtZIrG4doeHhkGYc37he7XLKRrsKIGlEe4YMLTpVgEEYbfyovGGAk3MCIuPaKOjo8vPnTvXaImE+ObEiRNXf/nll26ZGQ4LC6OysrJmQ3DHjh0dV1111T1r165t9PAcRhcCEICArwo09UKNuuuDRb/qPFCXK8IxY+wvRPSc+F7N9mgfENHrYgs18bWGW7LVCdyxtdus+aoX6vZfAQRh/x1bRfasmSBMffr0WR0eHj5pz549TYbhhISEwLy8PFteXp7L+tW5c+e78vPzP25uprdnz56O/Pz8e0pLSxGCXaaOhiAAAQhAAALKEUAQVs5YqKKS5oKw6HxoaOjqkSNHTtqyZUuTYbgGKDAsLMxWVlbWZq/rrruOcnNzg7KysiqbayQhIcGRlZV1D9YFt5kZJ0IAAhCAAAQUL4AgrPgh8q8CLxaERU+jo6NXR0dHTzpy5MjFwrD4aOCQIUNW7N27t0VLJiIjI6m4uDhoypQptGrVqmYDsGg4Pj7ekZOTgxDsX7ceegMBCEAAAhBoJIAgjJvCowKXCsKimKFDh67es2fPpJoH1C5Z35QpUwJXrVrV5OcSEhJIhN/U1NSLht/ak7VaraNHjx73ZGdnYznEJeXxAQhAAAIQgIBvCyAI+/b4+Vz1LQnColNvvPHG6pkzZ06Kjo6+02q1NrW1mkv73r9//xWHDh26Y/78+ffMnz8fIdilumgMAhCAAAQgoEwBBGFljovfVtXSICwAxNZqe/fuXVlQUDBp5syZd7766qtuCcSSJDlkWRZLIZp9cM5vBwQdgwAEIAABCKhYAEFYxYPvja63JgjX1vf/7d0/a50FGMbh9z0ptnRxEfsZRLo0KeKk4CRYZ5EOQdDP4Bay2a/Qgjh3FNHJoYNDadLVoVOXTi6VIo0N55UjqZTSP/dbk5LcveY+5/Q813OGH4fkZPWNEffv39+7d+/e/jRNL/vZ4XitVQCfP39+8ejRoxf+4lz8hAYJECBAgACBEyUghE/UuU7+i32VEH4yiM+dO7d348aN1TdM/P3gwYPTc0XOnj279/Dhw7cuXbo03LlzRwDPBTRPgAABAgSKBIRw0TFPwirTNJ0ax3H//7zWra2tU9vb24vLly/vXb9+fdjf3x+maVp9Wrw8c+bMf0+9t7e3+tL3U6vveV9bWxs2NzeHa9eund7a2trf3t72V+L+zxE8lgABAgQIFAgI4YIjWoEAAQIECBAgQGC+gBCeb+YRBAgQIECAAAECBQJCuOCIViBAgAABAgQIEJgvIITnm3kEAQIECBAgQIBAgYAQLjiiFQgQIECAAAECBOYLCOH5Zh5BgAABAgQIECBQICCEC45oBQIECBAgQIAAgfkCQni+mUcQIECAAAECBAgUCAjhgiNagQABAgQIECBAYL6AEJ5v5hEECBAgQIAAAQIFAkK44IhWIECAAAECBAgQmC8ghOebeQQBAgQIECBAgECBgBAuOGL7Cuvr62cXi8W1aZq+fNau4zh+fOvWrRtzHTY2Nr4ax/GT5XL59e7u7l9zH2+eAAECBAgQONkCQvhk3++NePWPQ3gYhquvErzPQxLCb8Tbx5IECBAgQOC5AkLYm+PYC6QhvLGx8d0wDH8Ow/D5MAwfrBZ78tPi9fX1d8Zx/Ong3+6O4/jzMAxv+0T42L8FvEACBAgQIHAkAkL4SFg96WEKzAzhL5bL5ae3b9/+ffWJ7zAM30zT9NlBFK8i+OrOzs73Fy5ceG+xWPwyjuNvQvgwr+W5CBAgQIDAyREQwifnVm/sK33JzwjfXIXu7u7uHwefCA87OzvfrrAOYveH5XK5uba29u40TVcez67+3Y9GvLFvKYsTIECAAIF/BYSwN8KxF5j5ifAzQ3ixWHz49C/GXbx48aPVJ8Y+ET72bwEvkAABAgQIHImAED4SVk96mAJC+DA1PRcBAgQIECDwWEAIey8ce4HDCGE/GnHsz+wFEiBAgACB1y4ghF87uf9wrsBhhPA4jncPvov4V78sN/cC5gkQIECAQKeAEO68a9VWL/uDGsMwXFn9gtyLfllu9S0ST3192s1hGH4cx/F9PyNc9XaxDAECBAgQiAWEcExlkAABAgQIECBAoElACDdd0y4ECBAgQIAAAQKxgBCOqQwSIECAAAECBAg0CQjhpmvahQABAgQIECBAIBYQwjGVQQIECBAgQIAAgSYBIdx0TbsQIECAAAECBAjEAkI4pjJIgAABAgQIECDQJCCEm65pFwIECBAgQIAAgVhACMdUBgkQIECAAAECBJoEhHDTNe1CgAABAgQIECAQCwjhmMogAQIECBAgQIBAk4AQbrqmXQgQIECAAAECBGIBIRxTGSRAgAABAgQIEGgSEMJN17QLAQIECBAgQIBALCCEYyqDBAgQIECAAAECTQJCuOmadiFAgAABAgQIEIgFhHBMZZAAAQIECBAgQKBJQAg3XdMuBAgQIECAAAECsYAQjqkMEiBAgAABAgQINAkI4aZr2oUAAQIECBAgQCAWEMIxlUECBAgQIECAAIEmASHcdE27ECBAgAABAgQIxAJCOKYySIAAAQIECBAg0CQghJuuaRcCBAgQIECAAIFYQAjHVAYJECBAgAABAgSaBIRw0zXtQoAAAQIECBAgEAsI4ZjKIAECBAgQIECAQJOAEG66pl0IECBAgAABAgRiASEcUxkkQIAAAQIECBBoEhDCTde0CwECBAgQIECAQCwghGMqgwQIECBAgAABAk0CQrjpmnYhQIAAAQIECBCIBYRwTGWQAAECBAgQIECgSUAIN13TLgQIECBAgAABArGAEI6pDBIgQIAAAQIECDQJCOGma9qFAAECBAgQIEAgFhDCMZVBAgQIECBAgACBJgEh3HRNuxAgQIAAAQIECMQCQjimMkiAAAECBAgQINAkIISbrmkXAgQIECBAgACBWEAIx1QGCRAgQIAAAQIEmgSEcNM17UKAAAECBAgQIBALCOGYyiABAgQIECBAgECTgBBuuqZdCBAgQIAAAQIEYgEhHFMZJECAAAECBAgQaBIQwk3XtAsBAgQIECBAgEAsIIRjKoMECBAgQIAAAQJNAkK46Zp2IUCAAAECBAgQiAWEcExlkAABAgQIECBAoElACDdd0y4ECBAgQIAAAQKxgBCOqQwSIECAAAECBAg0CQjhpmvahQABAgQIECBAIBYQwjGVQQIECBAgQIAAgSYBIdx0TbsQIECAAAECBAjEAkI4pjJIgAABAgQIECDQJCCEm65pFwIECBAgQIAAgVhACMdUBgkQIECAAAECBJoEhHDTNe1CgAABAgQIECAQCwjhmMogAQIECBAgQIBAk4AQbrqmXQgQIECAAAECBGIBIRxTGSRAgAABAgQIEGgSEMJN17QLAQIECBAgQIBALCCEYyqDBAgQIECAAAECTQJCuOmadiFAgAABAgQIEIgFhHBMZZAAAQIECBAgQKBJQAg3XdMuBAgQIECAAAECsYAQjqkMEiBAgAABAgQINAkI4aZr2oUAAQIECBAgQCAWEMIxlUECBAgQIECAAIEmASHcdE27ECBAgAABAgQIxAJCOKYySIAAAQIECBAg0CQghJuuaRcCBAgQIECAAIFYQAjHVAYJECBAgAABAgSaBIRw0zXtQoAAAQIECBAgEAsI4ZjKIAECBAgQIECAQJOAEG66pl0IECBAgAABAgRiASEcUxkkQIAAAQIECBBoEhDCTde0CwECBAgQIECAQCwghGMqgwQIECBAgAABAk0CQrjpmnYhQIAAAQIECBCIBYRwTGWQAAECBAgQIECgSUAIN13TLgQIECBAgAABArGAEI6pDBIgQIAAAQIECDQJCOGma9qFAAECBAgQIEAgFhDCMZVBAgQIECBAgACBJgEh3HRNuxAgQIAAAQIECMQCQjimMkiAAAECBAgQINAkIISbrmkXAgQIECBAgACBWEAIx1QGCRAgQIAAAQIEmgSEcNM17UKAAAECBAgQIBALCOGYyiABAgQIECBAgECTgBBuuqZdCBAgQIAAAQIEYgEhHFMZJECAAAECBAgQaBIQwk3XtAsBAgQIECBAgEAsIIRjKoMECBAgQIAAAQJNAkK46Zp2IUCAAAECBAgQiAWEcExlkAABAgQIECBAoElACDdd0y4ECBAgQIAAAQKxgBCOqQwSIECAAAECBAg0CQjhpmvahQABAgQIECBAIBYQwjGVQQIECBAgQIAAgSYBIdx0TbsQIECAAAECBAjEAkI4pjJIgAABAgQIECDQJCCEm65pFwIECBAgQIAAgVhACMdUBgkQIECAAAECBJoEhHDTNe1CgAABAgQIECAQCwjhmMogAQIECBAgQIBtq4jBAAAB00lEQVRAk4AQbrqmXQgQIECAAAECBGIBIRxTGSRAgAABAgQIEGgSEMJN17QLAQIECBAgQIBALCCEYyqDBAgQIECAAAECTQJCuOmadiFAgAABAgQIEIgFhHBMZZAAAQIECBAgQKBJQAg3XdMuBAgQIECAAAECsYAQjqkMEiBAgAABAgQINAkI4aZr2oUAAQIECBAgQCAWEMIxlUECBAgQIECAAIEmASHcdE27ECBAgAABAgQIxAJCOKYySIAAAQIECBAg0CQghJuuaRcCBAgQIECAAIFYQAjHVAYJECBAgAABAgSaBIRw0zXtQoAAAQIECBAgEAsI4ZjKIAECBAgQIECAQJOAEG66pl0IECBAgAABAgRiASEcUxkkQIAAAQIECBBoEhDCTde0CwECBAgQIECAQCwghGMqgwQIECBAgAABAk0CQrjpmnYhQIAAAQIECBCIBYRwTGWQAAECBAgQIECgSUAIN13TLgQIECBAgAABArGAEI6pDBIgQIAAAQIECDQJCOGma9qFAAECBAgQIEAgFhDCMZVBAgQIECBAgACBJgEh3HRNuxAgQIAAAQIECMQCQjimMkiAAAECBAgQINAkIISbrmkXAgQIECBAgACBWOAfS8eZmROarxwAAAAASUVORK5CYII="></div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div id="graph_data" class="grid">
+			<div class="card bg-light block">
+				<div class="card-header">
+					API Call Path
+				</div>
+				<div class="card-body route0_body">
+				<div class="rr_item">
+					<button class="btn btn-block btn-info" type="button" data-toggle="collapse" data-target="#rr_item17" aria-expanded="false" aria-controls="rr_item17">
+						<div>Request (API1)<br>http://127.0.0.1:3000/</div>
+					</button>
+					<div class="collapse rr_detail" id="rr_item17">
+						<div class="card card-body text-white bg-dark">
+							url: http://127.0.0.1:3000/<br>
+							Headers<br>
+							accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9<br>upgrade-insecure-requests: 1<br>user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36<br><br>
+							referrer: http://127.0.0.1:3000/<br>
+							referrerPolicy: no-referrer-when-downgrade<br>
+							credentials: include<br>
+							destination: unknown<br>
+							integrity: <br>
+							cache: no-cache<br>
+							method: GET<br>
+							timeStamp: 1582267502612<br>
+							date: Fri Feb 21 2020 14:45:02 GMT+0800 (台北標準時間)<br>
+							tabId: 89<br>
+							mode: navigate<br>
+							route: 0<br>
+						</div>
+					</div>
+				</div>
+				<div class="rr_time">↓<br>0.0150秒<br>↓</div>
+			
+				<div class="rr_item">
+					<button class="btn btn-block btn-success" type="button" data-toggle="collapse" data-target="#rr_item18" aria-expanded="false" aria-controls="rr_item18">
+						<div>Response<br>http://127.0.0.1:3000/</div>
+					</button>
+					<div class="collapse rr_detail" id="rr_item18">
+						<div class="card card-body text-white bg-dark">
+							url: http://127.0.0.1:3000/<br>
+							Headers
+							accept-ranges: bytes<br>cache-control: public, max-age=0<br>content-length: 2375<br>content-type: text/html; charset=UTF-8<br>date: Fri, 21 Feb 2020 06:45:02 GMT<br>etag: W/'947-16e024b4d20'<br>last-modified: Fri, 25 Oct 2019 09:41:59 GMT<br>x-powered-by: Express<br><br>
+							ok: true<br>
+							status: 200<br>
+							statusText: OK<br>
+							redirected: false<br>
+							timeStamp: 1582267502627<br>
+							date: Fri Feb 21 2020 14:45:02 GMT+0800 (台北標準時間)<br>
+							tabId: 89<br>
+							route: 0<br>
+						</div>
+					</div>
+				</div>
+				<div class="rr_time">↓<br>0.5670秒<br>↓</div>
+			
+				<div class="rr_item">
+					<button class="btn btn-block btn-info" type="button" data-toggle="collapse" data-target="#rr_item19" aria-expanded="false" aria-controls="rr_item19">
+						<div>Request (API2)<br>https://api.github.com/search/repositories?q=&amp;sort=&amp;order=</div>
+					</button>
+					<div class="collapse rr_detail" id="rr_item19">
+						<div class="card card-body text-white bg-dark">
+							url: https://api.github.com/search/repositories?q=&amp;sort=&amp;order=<br>
+							Headers<br>
+							accept: */*<br>user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36<br><br>
+							referrer: http://127.0.0.1:3000/<br>
+							referrerPolicy: no-referrer-when-downgrade<br>
+							credentials: same-origin<br>
+							destination: <br>
+							integrity: <br>
+							cache: default<br>
+							method: GET<br>
+							timeStamp: 1582267503194<br>
+							date: Fri Feb 21 2020 14:45:03 GMT+0800 (台北標準時間)<br>
+							tabId: 89<br>
+							mode: cors<br>
+							route: 0<br>
+						</div>
+					</div>
+				</div>
+				<div class="rr_time">↓<br>1.4110秒<br>↓</div>
+			
+				<div class="rr_item">
+					<button class="btn btn-block btn-success" type="button" data-toggle="collapse" data-target="#rr_item20" aria-expanded="false" aria-controls="rr_item20">
+						<div>Response<br>https://api.github.com/search/repositories?q=javascript&amp;sort=stars</div>
+					</button>
+					<div class="collapse rr_detail" id="rr_item20">
+						<div class="card card-body text-white bg-dark">
+							url: https://api.github.com/search/repositories?q=javascript&amp;sort=stars<br>
+							Headers
+							cache-control: no-cache<br>content-type: application/json; charset=utf-8<br>link: <https: api.github.com="" search="" repositories?q="javascript&amp;sort=stars&amp;page=2">; rel='next', <https: api.github.com="" search="" repositories?q="javascript&amp;sort=stars&amp;page=34">; rel='last'<br>x-github-media-type: github.v3; format=json<br>x-ratelimit-limit: 10<br>x-ratelimit-remaining: 8<br>x-ratelimit-reset: 1582267563<br><br>
+							ok: true<br>
+							status: 200<br>
+							statusText: OK<br>
+							redirected: false<br>
+							timeStamp: 1582267504605<br>
+							date: Fri Feb 21 2020 14:45:04 GMT+0800 (台北標準時間)<br>
+							tabId: 89<br>
+							route: 0<br>
+						</https:></https:></div>
+					</div>
+				</div>
+				<div class="rr_time">↓<br>7430.0860秒<br>↓</div>
+			
+				<div class="rr_item">
+					<button class="btn btn-block btn-info" type="button" data-toggle="collapse" data-target="#rr_item21" aria-expanded="false" aria-controls="rr_item21">
+						<div>Request (API1)<br>http://127.0.0.1:3000/</div>
+					</button>
+					<div class="collapse rr_detail" id="rr_item21">
+						<div class="card card-body text-white bg-dark">
+							url: http://127.0.0.1:3000/<br>
+							Headers<br>
+							accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9<br>upgrade-insecure-requests: 1<br>user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36<br><br>
+							referrer: http://127.0.0.1:3000/<br>
+							referrerPolicy: no-referrer-when-downgrade<br>
+							credentials: include<br>
+							destination: unknown<br>
+							integrity: <br>
+							cache: no-cache<br>
+							method: GET<br>
+							timeStamp: 1582274934691<br>
+							date: Fri Feb 21 2020 16:48:54 GMT+0800 (台北標準時間)<br>
+							tabId: 154<br>
+							mode: navigate<br>
+							route: 0<br>
+						</div>
+					</div>
+				</div>
+				<div class="rr_time">↓<br>0.0140秒<br>↓</div>
+			
+				<div class="rr_item">
+					<button class="btn btn-block btn-success" type="button" data-toggle="collapse" data-target="#rr_item22" aria-expanded="false" aria-controls="rr_item22">
+						<div>Response<br>http://127.0.0.1:3000/</div>
+					</button>
+					<div class="collapse rr_detail" id="rr_item22">
+						<div class="card card-body text-white bg-dark">
+							url: http://127.0.0.1:3000/<br>
+							Headers
+							accept-ranges: bytes<br>cache-control: public, max-age=0<br>content-length: 2375<br>content-type: text/html; charset=UTF-8<br>date: Fri, 21 Feb 2020 08:48:54 GMT<br>etag: W/'947-16e024b4d20'<br>last-modified: Fri, 25 Oct 2019 09:41:59 GMT<br>x-powered-by: Express<br><br>
+							ok: true<br>
+							status: 200<br>
+							statusText: OK<br>
+							redirected: false<br>
+							timeStamp: 1582274934705<br>
+							date: Fri Feb 21 2020 16:48:54 GMT+0800 (台北標準時間)<br>
+							tabId: 154<br>
+							route: 0<br>
+						</div>
+					</div>
+				</div>
+				<div class="rr_time">↓<br>0.4830秒<br>↓</div>
+			
+				<div class="rr_item">
+					<button class="btn btn-block btn-info" type="button" data-toggle="collapse" data-target="#rr_item23" aria-expanded="false" aria-controls="rr_item23">
+						<div>Request (API2)<br>https://api.github.com/search/repositories?q=&amp;sort=&amp;order=</div>
+					</button>
+					<div class="collapse rr_detail" id="rr_item23">
+						<div class="card card-body text-white bg-dark">
+							url: https://api.github.com/search/repositories?q=&amp;sort=&amp;order=<br>
+							Headers<br>
+							accept: */*<br>user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36<br><br>
+							referrer: http://127.0.0.1:3000/<br>
+							referrerPolicy: no-referrer-when-downgrade<br>
+							credentials: same-origin<br>
+							destination: <br>
+							integrity: <br>
+							cache: default<br>
+							method: GET<br>
+							timeStamp: 1582274935188<br>
+							date: Fri Feb 21 2020 16:48:55 GMT+0800 (台北標準時間)<br>
+							tabId: 154<br>
+							mode: cors<br>
+							route: 0<br>
+						</div>
+					</div>
+				</div>
+				<div class="rr_time">↓<br>0.2230秒<br>↓</div>
+			
+				<div class="rr_item">
+					<button class="btn btn-block btn-danger" type="button" data-toggle="collapse" data-target="#rr_item24" aria-expanded="false" aria-controls="rr_item24">
+						<div>Response<br>https://api.github.com/search/repositories?q=&amp;sort=&amp;order=</div>
+					</button>
+					<div class="collapse rr_detail" id="rr_item24">
+						<div class="card card-body text-white bg-dark">
+							url: https://api.github.com/search/repositories?q=&amp;sort=&amp;order=<br>
+							Headers
+							cache-control: no-cache<br>content-length: 205<br>content-type: application/json; charset=utf-8<br>x-github-media-type: github.v3; format=json<br>x-ratelimit-limit: 10<br>x-ratelimit-remaining: 7<br>x-ratelimit-reset: 1582274976<br><br>
+							ok: false<br>
+							status: 422<br>
+							statusText: Unprocessable Entity<br>
+							redirected: false<br>
+							timeStamp: 1582274935411<br>
+							date: Fri Feb 21 2020 16:48:55 GMT+0800 (台北標準時間)<br>
+							tabId: 154<br>
+							route: 0<br>
+						</div>
+					</div>
+				</div>
+				<div class="rr_time">↓<br>2762.0150秒<br>↓</div>
+			
+				<div class="rr_item">
+					<button class="btn btn-block btn-info" type="button" data-toggle="collapse" data-target="#rr_item25" aria-expanded="false" aria-controls="rr_item25">
+						<div>Request (API1)<br>http://127.0.0.1:3000/</div>
+					</button>
+					<div class="collapse rr_detail" id="rr_item25">
+						<div class="card card-body text-white bg-dark">
+							url: http://127.0.0.1:3000/<br>
+							Headers<br>
+							accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9<br>upgrade-insecure-requests: 1<br>user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36<br><br>
+							referrer: http://127.0.0.1:3000/<br>
+							referrerPolicy: no-referrer-when-downgrade<br>
+							credentials: include<br>
+							destination: document<br>
+							integrity: <br>
+							cache: no-cache<br>
+							method: GET<br>
+							timeStamp: 1582277697426<br>
+							date: Fri Feb 21 2020 17:34:57 GMT+0800 (台北標準時間)<br>
+							tabId: 89<br>
+							mode: navigate<br>
+							route: 0<br>
+						</div>
+					</div>
+				</div>
+				<div class="rr_time">↓<br>0.0080秒<br>↓</div>
+			
+				<div class="rr_item">
+					<button class="btn btn-block btn-success" type="button" data-toggle="collapse" data-target="#rr_item26" aria-expanded="false" aria-controls="rr_item26">
+						<div>Response<br>http://127.0.0.1:3000/</div>
+					</button>
+					<div class="collapse rr_detail" id="rr_item26">
+						<div class="card card-body text-white bg-dark">
+							url: http://127.0.0.1:3000/<br>
+							Headers
+							accept-ranges: bytes<br>cache-control: public, max-age=0<br>content-length: 2375<br>content-type: text/html; charset=UTF-8<br>date: Fri, 21 Feb 2020 09:34:57 GMT<br>etag: W/'947-16e024b4d20'<br>last-modified: Fri, 25 Oct 2019 09:41:59 GMT<br>x-powered-by: Express<br><br>
+							ok: true<br>
+							status: 200<br>
+							statusText: OK<br>
+							redirected: false<br>
+							timeStamp: 1582277697434<br>
+							date: Fri Feb 21 2020 17:34:57 GMT+0800 (台北標準時間)<br>
+							tabId: 89<br>
+							route: 0<br>
+						</div>
+					</div>
+				</div>
+				<div class="rr_time">↓<br>220.9820秒<br>↓</div>
+			
+				<div class="rr_item">
+					<button class="btn btn-block btn-info" type="button" data-toggle="collapse" data-target="#rr_item27" aria-expanded="false" aria-controls="rr_item27">
+						<div>Request (API1)<br>http://127.0.0.1:3000/</div>
+					</button>
+					<div class="collapse rr_detail" id="rr_item27">
+						<div class="card card-body text-white bg-dark">
+							url: http://127.0.0.1:3000/<br>
+							Headers<br>
+							accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9<br>upgrade-insecure-requests: 1<br>user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36<br><br>
+							referrer: http://127.0.0.1:3000/<br>
+							referrerPolicy: no-referrer-when-downgrade<br>
+							credentials: include<br>
+							destination: document<br>
+							integrity: <br>
+							cache: no-cache<br>
+							method: GET<br>
+							timeStamp: 1582277918416<br>
+							date: Fri Feb 21 2020 17:38:38 GMT+0800 (台北標準時間)<br>
+							tabId: 89<br>
+							mode: navigate<br>
+							route: 0<br>
+						</div>
+					</div>
+				</div>
+				<div class="rr_time">↓<br>0.0080秒<br>↓</div>
+			
+				<div class="rr_item">
+					<button class="btn btn-block btn-success" type="button" data-toggle="collapse" data-target="#rr_item28" aria-expanded="false" aria-controls="rr_item28">
+						<div>Response<br>http://127.0.0.1:3000/</div>
+					</button>
+					<div class="collapse rr_detail" id="rr_item28">
+						<div class="card card-body text-white bg-dark">
+							url: http://127.0.0.1:3000/<br>
+							Headers
+							accept-ranges: bytes<br>cache-control: public, max-age=0<br>content-length: 2375<br>content-type: text/html; charset=UTF-8<br>date: Fri, 21 Feb 2020 09:38:38 GMT<br>etag: W/'947-16e024b4d20'<br>last-modified: Fri, 25 Oct 2019 09:41:59 GMT<br>x-powered-by: Express<br><br>
+							ok: true<br>
+							status: 200<br>
+							statusText: OK<br>
+							redirected: false<br>
+							timeStamp: 1582277918424<br>
+							date: Fri Feb 21 2020 17:38:38 GMT+0800 (台北標準時間)<br>
+							tabId: 89<br>
+							route: 0<br>
+						</div>
+					</div>
+				</div>
+				<div class="rr_time">↓<br>1.6860秒<br>↓</div>
+			
+				<div class="rr_item">
+					<button class="btn btn-block btn-success" type="button" data-toggle="collapse" data-target="#rr_item29" aria-expanded="false" aria-controls="rr_item29">
+						<div>Response<br>https://api.github.com/search/repositories?q=javascript&amp;sort=stars</div>
+					</button>
+					<div class="collapse rr_detail" id="rr_item29">
+						<div class="card card-body text-white bg-dark">
+							url: https://api.github.com/search/repositories?q=javascript&amp;sort=stars<br>
+							Headers
+							cache-control: no-cache<br>content-type: application/json; charset=utf-8<br>link: <https: api.github.com="" search="" repositories?q="javascript&amp;sort=stars&amp;page=2">; rel='next', <https: api.github.com="" search="" repositories?q="javascript&amp;sort=stars&amp;page=34">; rel='last'<br>x-github-media-type: github.v3; format=json<br>x-ratelimit-limit: 10<br>x-ratelimit-remaining: 7<br>x-ratelimit-reset: 1582277972<br><br>
+							ok: true<br>
+							status: 200<br>
+							statusText: OK<br>
+							redirected: false<br>
+							timeStamp: 1582277920110<br>
+							date: Fri Feb 21 2020 17:38:40 GMT+0800 (台北標準時間)<br>
+							tabId: 89<br>
+							route: 0<br>
+						</https:></https:></div>
+					</div>
+				</div>
+				<div class="rr_time">↓<br>607.6810秒<br>↓</div>
+			
+				<div class="rr_item">
+					<button class="btn btn-block btn-info" type="button" data-toggle="collapse" data-target="#rr_item30" aria-expanded="false" aria-controls="rr_item30">
+						<div>Request (API1)<br>http://127.0.0.1:3000/</div>
+					</button>
+					<div class="collapse rr_detail" id="rr_item30">
+						<div class="card card-body text-white bg-dark">
+							url: http://127.0.0.1:3000/<br>
+							Headers<br>
+							accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9<br>upgrade-insecure-requests: 1<br>user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36<br><br>
+							referrer: http://127.0.0.1:3000/<br>
+							referrerPolicy: no-referrer-when-downgrade<br>
+							credentials: include<br>
+							destination: document<br>
+							integrity: <br>
+							cache: no-cache<br>
+							method: GET<br>
+							timeStamp: 1582278527791<br>
+							date: Fri Feb 21 2020 17:48:47 GMT+0800 (台北標準時間)<br>
+							tabId: 89<br>
+							mode: navigate<br>
+							route: 0<br>
+						</div>
+					</div>
+				</div>
+				<div class="rr_time">↓<br>0.0090秒<br>↓</div>
+			
+				<div class="rr_item">
+					<button class="btn btn-block btn-success" type="button" data-toggle="collapse" data-target="#rr_item31" aria-expanded="false" aria-controls="rr_item31">
+						<div>Response<br>http://127.0.0.1:3000/</div>
+					</button>
+					<div class="collapse rr_detail" id="rr_item31">
+						<div class="card card-body text-white bg-dark">
+							url: http://127.0.0.1:3000/<br>
+							Headers
+							accept-ranges: bytes<br>cache-control: public, max-age=0<br>content-length: 2375<br>content-type: text/html; charset=UTF-8<br>date: Fri, 21 Feb 2020 09:48:47 GMT<br>etag: W/'947-16e024b4d20'<br>last-modified: Fri, 25 Oct 2019 09:41:59 GMT<br>x-powered-by: Express<br><br>
+							ok: true<br>
+							status: 200<br>
+							statusText: OK<br>
+							redirected: false<br>
+							timeStamp: 1582278527800<br>
+							date: Fri Feb 21 2020 17:48:47 GMT+0800 (台北標準時間)<br>
+							tabId: 89<br>
+							route: 0<br>
+						</div>
+					</div>
+				</div>
+				<br>—END—
+			</div>
+			</div>
+		</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 第三部分 API調用報告 END -->
+						</body>
+						</html>
